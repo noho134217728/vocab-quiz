@@ -10,10 +10,8 @@
 以下のURLから使用できます。
 
 ```text
-https://ユーザー名.github.io/リポジトリ名/
+https://noho134217728.github.io/vocab-quiz/
 ```
-
-実際のURLに置き換えてください。
 
 ## 注意
 
