@@ -60,7 +60,7 @@
 
     .controls {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: 1fr 1fr 1fr 1.25fr 1.5fr;
       gap: 16px;
       align-items: end;
     }
@@ -77,7 +77,8 @@
       color: #374151;
     }
 
-    input {
+    input,
+    select {
       width: 100%;
       padding: 10px 12px;
       border: 1px solid var(--line);
@@ -86,7 +87,8 @@
       background: white;
     }
 
-    input:focus {
+    input:focus,
+    select:focus {
       outline: 2px solid #c7d2fe;
       border-color: #818cf8;
     }
@@ -203,11 +205,24 @@
       font-size: 15px;
       font-weight: 650;
       margin-bottom: 6px;
+      overflow-wrap: anywhere;
     }
 
     .q-pos {
       font-size: 12px;
       color: var(--muted);
+    }
+
+    .direction-pill {
+      display: inline-block;
+      padding: 1px 7px;
+      border: 1px solid #d1d5db;
+      border-radius: 999px;
+      font-size: 11px;
+      font-weight: 700;
+      color: #374151;
+      background: #f9fafb;
+      margin-right: 4px;
     }
 
     .answer-line {
@@ -221,12 +236,14 @@
       font-weight: 800;
       letter-spacing: 0.02em;
       margin-top: 2px;
+      overflow-wrap: anywhere;
     }
 
     .alias-text {
       font-size: 12px;
       color: var(--muted);
       margin-top: 2px;
+      overflow-wrap: anywhere;
     }
 
     .example-text {
@@ -234,6 +251,7 @@
       color: #4b5563;
       margin-top: 4px;
       line-height: 1.4;
+      overflow-wrap: anywhere;
     }
 
     body.view-quiz #answerSheet {
@@ -251,6 +269,12 @@
 
     #answerSheet {
       page-break-before: always;
+    }
+
+    @media (max-width: 900px) {
+      .controls {
+        grid-template-columns: 1fr 1fr;
+      }
     }
 
     @media (max-width: 760px) {
@@ -317,6 +341,11 @@
         padding: 7px 0;
       }
 
+      .direction-pill {
+        border: 1px solid #999;
+        background: white;
+      }
+
       body.print-quiz #quizSheet {
         display: block !important;
       }
@@ -363,6 +392,15 @@
         <div class="control-group">
           <label for="questionCount">問題数</label>
           <input id="questionCount" type="number" min="1" value="20" />
+        </div>
+
+        <div class="control-group">
+          <label for="quizMode">出題形式</label>
+          <select id="quizMode">
+            <option value="ja-to-en">日本語 → 英語</option>
+            <option value="en-to-ja">英語 → 日本語</option>
+            <option value="mixed">ランダム混合</option>
+          </select>
         </div>
 
         <div class="control-group">
@@ -418,6 +456,7 @@
     const startIdInput = document.getElementById("startId");
     const endIdInput = document.getElementById("endId");
     const questionCountInput = document.getElementById("questionCount");
+    const quizModeInput = document.getElementById("quizMode");
     const quizTitleInput = document.getElementById("quizTitle");
 
     const statusEl = document.getElementById("status");
@@ -458,10 +497,71 @@
         .sort((a, b) => Number(a.id) - Number(b.id));
     }
 
+    function getModeLabel(mode) {
+      if (mode === "en-to-ja") return "英語 → 日本語";
+      if (mode === "mixed") return "ランダム混合";
+      return "日本語 → 英語";
+    }
+
+    function getDirectionLabel(direction) {
+      if (direction === "en-to-ja") return "英→日";
+      return "日→英";
+    }
+
+    function createQuizEntries(selectedWords, mode) {
+      return selectedWords.map(word => {
+        let direction = mode;
+
+        if (mode === "mixed") {
+          direction = Math.random() < 0.5 ? "ja-to-en" : "en-to-ja";
+        }
+
+        return {
+          word,
+          direction
+        };
+      });
+    }
+
+    function getQuestionPrompt(entry) {
+      const { word, direction } = entry;
+
+      if (direction === "en-to-ja") {
+        return word.answer;
+      }
+
+      return word.ja_prompt;
+    }
+
+    function getCorrectAnswer(entry) {
+      const { word, direction } = entry;
+
+      if (direction === "en-to-ja") {
+        return word.ja_prompt;
+      }
+
+      return word.answer;
+    }
+
+    function getSupplementText(entry) {
+      const { word, direction } = entry;
+
+      if (!Array.isArray(word.aliases) || word.aliases.length === 0) {
+        return "";
+      }
+
+      if (direction === "en-to-ja") {
+        return `関連英語: ${word.aliases.map(escapeHtml).join(", ")}`;
+      }
+
+      return `別解: ${word.aliases.map(escapeHtml).join(", ")}`;
+    }
+
     function generateQuiz() {
       const startId = Number(startIdInput.value);
       const endId = Number(endIdInput.value);
       const requestedCount = Number(questionCountInput.value);
+      const mode = quizModeInput.value;
       const title = quizTitleInput.value.trim() || "英単語小テスト";
 
       if (!Number.isFinite(startId) || !Number.isFinite(endId) || startId > endId) {
@@ -482,7 +582,8 @@
       }
 
       const actualCount = Math.min(requestedCount, rangeWords.length);
-      currentQuiz = shuffle(rangeWords).slice(0, actualCount);
+      const selectedWords = shuffle(rangeWords).slice(0, actualCount);
+      currentQuiz = createQuizEntries(selectedWords, mode);
 
       renderQuiz({
         title,
@@ -490,50 +591,56 @@
         endId,
         requestedCount,
         actualCount,
-        rangeSize: rangeWords.length
+        rangeSize: rangeWords.length,
+        mode
       });
 
       setView("quiz");
 
       statusEl.textContent =
-        `作成完了: ID ${startId}〜${endId} の ${rangeWords.length}語から ${actualCount}問を出題。`;
+        `作成完了: ID ${startId}〜${endId} の ${rangeWords.length}語から ${actualCount}問を出題。形式: ${getModeLabel(mode)}。`;
     }
 
     function renderQuiz(info) {
       quizSheetTitleEl.textContent = info.title;
       answerSheetTitleEl.textContent = `${info.title} 模範解答`;
 
-      const meta = `範囲: ID ${info.startId}〜${info.endId} / 問題数: ${info.actualCount}問`;
+      const meta = `範囲: ID ${info.startId}〜${info.endId} / 問題数: ${info.actualCount}問 / 形式: ${getModeLabel(info.mode)}`;
       quizSheetMetaEl.textContent = meta;
       answerSheetMetaEl.textContent = meta;
 
-      quizListEl.innerHTML = currentQuiz.map((word, index) => {
+      quizListEl.innerHTML = currentQuiz.map((entry, index) => {
+        const word = entry.word;
         const number = index + 1;
-        const ja = escapeHtml(word.ja_prompt);
+        const prompt = escapeHtml(getQuestionPrompt(entry));
         const pos = escapeHtml(word.pos || "");
         const id = escapeHtml(word.id);
+        const directionLabel = escapeHtml(getDirectionLabel(entry.direction));
 
         return `
           <div class="question-item">
             <div class="q-number">${number}</div>
             <div class="q-main">
-              <div class="q-prompt">${ja}</div>
-              <div class="q-pos">品詞: ${pos} / ID: ${id}</div>
+              <div class="q-prompt">${prompt}</div>
+              <div class="q-pos">
+                <span class="direction-pill">${directionLabel}</span>
+                品詞: ${pos} / ID: ${id}
+              </div>
               <div class="answer-line"></div>
             </div>
           </div>
         `;
       }).join("");
 
-      answerListEl.innerHTML = currentQuiz.map((word, index) => {
+      answerListEl.innerHTML = currentQuiz.map((entry, index) => {
+        const word = entry.word;
         const number = index + 1;
-        const ja = escapeHtml(word.ja_prompt);
+        const prompt = escapeHtml(getQuestionPrompt(entry));
         const pos = escapeHtml(word.pos || "");
-        const answer = escapeHtml(word.answer);
+        const correctAnswer = escapeHtml(getCorrectAnswer(entry));
         const id = escapeHtml(word.id);
-        const aliases = Array.isArray(word.aliases) && word.aliases.length > 0
-          ? `別解: ${word.aliases.map(escapeHtml).join(", ")}`
-          : "";
+        const directionLabel = escapeHtml(getDirectionLabel(entry.direction));
+        const supplement = getSupplementText(entry);
         const example = word.example
           ? `例文: ${escapeHtml(word.example)}`
           : "";
@@ -542,10 +649,13 @@
           <div class="question-item">
             <div class="q-number">${number}</div>
             <div class="q-main">
-              <div class="q-prompt">${ja}</div>
-              <div class="q-pos">品詞: ${pos} / ID: ${id}</div>
-              <div class="answer-text">${answer}</div>
-              ${aliases ? `<div class="alias-text">${aliases}</div>` : ""}
+              <div class="q-prompt">${prompt}</div>
+              <div class="q-pos">
+                <span class="direction-pill">${directionLabel}</span>
+                品詞: ${pos} / ID: ${id}
+              </div>
+              <div class="answer-text">${correctAnswer}</div>
+              ${supplement ? `<div class="alias-text">${supplement}</div>` : ""}
               ${example ? `<div class="example-text">${example}</div>` : ""}
             </div>
           </div>
@@ -610,7 +720,7 @@
         endIdInput.value = maxId;
         questionCountInput.value = Math.min(20, words.length);
 
-        statusEl.textContent = `${words.length}語を読み込みました。範囲と問題数を指定して作成してください。`;
+        statusEl.textContent = `${words.length}語を読み込みました。範囲・問題数・出題形式を指定して作成してください。`;
 
         generateQuiz();
       } catch (error) {
