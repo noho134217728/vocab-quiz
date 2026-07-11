@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="robots" content="noindex, nofollow">
+  <title>英単語小テスト生成器</title>
+  <style>
+    :root {
+      --ink: #1f2937;
+      --muted: #6b7280;
+      --line: #d1d5db;
+      --paper: #ffffff;
+      --bg: #f3f4f6;
+      --accent: #111827;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 32px;
+      background: var(--bg);
+      color: var(--ink);
+      font-family:
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Hiragino Sans",
+        "Yu Gothic",
+        sans-serif;
+    }
+
+    .app {
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    .panel {
+      background: white;
+      border: 1px solid #e5e7eb;
+      border-radius: 18px;
+      padding: 24px;
+      margin-bottom: 24px;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: 28px;
+      letter-spacing: 0.03em;
+    }
+
+    .description {
+      margin: 0 0 20px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .controls {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      align-items: end;
+    }
+
+    .control-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    label {
+      font-size: 13px;
+      font-weight: 700;
+      color: #374151;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px 12px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      font-size: 16px;
+      background: white;
+    }
+
+    input:focus {
+      outline: 2px solid #c7d2fe;
+      border-color: #818cf8;
+    }
+
+    .button-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    button {
+      appearance: none;
+      border: 1px solid #d1d5db;
+      border-radius: 999px;
+      padding: 10px 16px;
+      background: white;
+      color: var(--ink);
+      font-weight: 700;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #f9fafb;
+    }
+
+    .primary {
+      background: var(--accent);
+      color: white;
+      border-color: var(--accent);
+    }
+
+    .primary:hover {
+      background: #374151;
+    }
+
+    .status {
+      margin-top: 14px;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    .sheet {
+      background: var(--paper);
+      border: 1px solid #e5e7eb;
+      border-radius: 6px;
+      padding: 36px 44px;
+      margin-bottom: 24px;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+    }
+
+    .sheet-header {
+      display: grid;
+      grid-template-columns: 1fr 180px;
+      gap: 16px;
+      border-bottom: 2px solid var(--ink);
+      padding-bottom: 12px;
+      margin-bottom: 18px;
+    }
+
+    .sheet-title {
+      font-size: 24px;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+    }
+
+    .sheet-meta {
+      font-size: 13px;
+      color: var(--muted);
+      margin-top: 4px;
+    }
+
+    .name-box {
+      display: grid;
+      grid-template-columns: 42px 1fr;
+      align-items: end;
+      gap: 8px;
+      font-size: 14px;
+    }
+
+    .name-line {
+      border-bottom: 1px solid var(--ink);
+      height: 28px;
+    }
+
+    .question-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 36px;
+      row-gap: 0;
+      margin-top: 8px;
+    }
+
+    .question-item {
+      display: grid;
+      grid-template-columns: 32px 1fr;
+      gap: 8px;
+      padding: 8px 0;
+      break-inside: avoid;
+      border-bottom: 1px dotted #d1d5db;
+    }
+
+    .q-number {
+      font-weight: 800;
+      color: #111827;
+    }
+
+    .q-main {
+      min-width: 0;
+    }
+
+    .q-prompt {
+      font-size: 15px;
+      font-weight: 650;
+      margin-bottom: 6px;
+    }
+
+    .q-pos {
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .answer-line {
+      height: 24px;
+      border-bottom: 1px solid #111827;
+      margin-top: 6px;
+    }
+
+    .answer-text {
+      font-size: 16px;
+      font-weight: 800;
+      letter-spacing: 0.02em;
+      margin-top: 2px;
+    }
+
+    .alias-text {
+      font-size: 12px;
+      color: var(--muted);
+      margin-top: 2px;
+    }
+
+    .example-text {
+      font-size: 11px;
+      color: #4b5563;
+      margin-top: 4px;
+      line-height: 1.4;
+    }
+
+    body.view-quiz #answerSheet {
+      display: none;
+    }
+
+    body.view-answer #quizSheet {
+      display: none;
+    }
+
+    body.view-both #quizSheet,
+    body.view-both #answerSheet {
+      display: block;
+    }
+
+    #answerSheet {
+      page-break-before: always;
+    }
+
+    @media (max-width: 760px) {
+      body {
+        padding: 16px;
+      }
+
+      .controls {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .question-list {
+        grid-template-columns: 1fr;
+      }
+
+      .sheet {
+        padding: 28px 24px;
+      }
+
+      .sheet-header {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media print {
+      @page {
+        size: A4 portrait;
+        margin: 12mm;
+      }
+
+      body {
+        background: white;
+        padding: 0;
+        color: black;
+      }
+
+      .panel {
+        display: none;
+      }
+
+      .app {
+        max-width: none;
+        margin: 0;
+      }
+
+      .sheet {
+        box-shadow: none;
+        border: none;
+        border-radius: 0;
+        padding: 0;
+        margin: 0;
+      }
+
+      .sheet + .sheet {
+        page-break-before: always;
+      }
+
+      .question-list {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 28px;
+      }
+
+      .question-item {
+        padding: 7px 0;
+      }
+
+      body.print-quiz #quizSheet {
+        display: block !important;
+      }
+
+      body.print-quiz #answerSheet {
+        display: none !important;
+      }
+
+      body.print-answer #quizSheet {
+        display: none !important;
+      }
+
+      body.print-answer #answerSheet {
+        display: block !important;
+      }
+
+      body.print-both #quizSheet,
+      body.print-both #answerSheet {
+        display: block !important;
+      }
+    }
+  </style>
+</head>
+
+<body class="view-quiz">
+  <div class="app">
+    <section class="panel">
+      <h1>英単語小テスト生成器</h1>
+      <p class="description">
+        指定したID範囲からランダムに問題を作成し、問題用紙・模範解答を切り替えて印刷できます。
+      </p>
+
+      <div class="controls">
+        <div class="control-group">
+          <label for="startId">開始ID</label>
+          <input id="startId" type="number" min="1" value="1" />
+        </div>
+
+        <div class="control-group">
+          <label for="endId">終了ID</label>
+          <input id="endId" type="number" min="1" value="100" />
+        </div>
+
+        <div class="control-group">
+          <label for="questionCount">問題数</label>
+          <input id="questionCount" type="number" min="1" value="20" />
+        </div>
+
+        <div class="control-group">
+          <label for="quizTitle">タイトル</label>
+          <input id="quizTitle" type="text" value="英単語小テスト" />
+        </div>
+      </div>
+
+      <div class="button-row">
+        <button class="primary" id="generateButton">小テストを作成</button>
+        <button id="showQuizButton">問題用紙</button>
+        <button id="showAnswerButton">模範解答</button>
+        <button id="showBothButton">両方表示</button>
+        <button id="printQuizButton">問題を印刷</button>
+        <button id="printAnswerButton">解答を印刷</button>
+        <button id="printBothButton">問題＋解答を印刷</button>
+      </div>
+
+      <div class="status" id="status">words.json を読み込み中...</div>
+    </section>
+
+    <section class="sheet" id="quizSheet">
+      <div class="sheet-header">
+        <div>
+          <div class="sheet-title" id="quizSheetTitle">英単語小テスト</div>
+          <div class="sheet-meta" id="quizSheetMeta">範囲: - / 問題数: -</div>
+        </div>
+        <div class="name-box">
+          <div>氏名</div>
+          <div class="name-line"></div>
+        </div>
+      </div>
+
+      <div class="question-list" id="quizList"></div>
+    </section>
+
+    <section class="sheet" id="answerSheet">
+      <div class="sheet-header">
+        <div>
+          <div class="sheet-title" id="answerSheetTitle">英単語小テスト 模範解答</div>
+          <div class="sheet-meta" id="answerSheetMeta">範囲: - / 問題数: -</div>
+        </div>
+      </div>
+
+      <div class="question-list" id="answerList"></div>
+    </section>
+  </div>
+
+  <script>
+    let words = [];
+    let currentQuiz = [];
+
+    const startIdInput = document.getElementById("startId");
+    const endIdInput = document.getElementById("endId");
+    const questionCountInput = document.getElementById("questionCount");
+    const quizTitleInput = document.getElementById("quizTitle");
+
+    const statusEl = document.getElementById("status");
+    const quizListEl = document.getElementById("quizList");
+    const answerListEl = document.getElementById("answerList");
+
+    const quizSheetTitleEl = document.getElementById("quizSheetTitle");
+    const answerSheetTitleEl = document.getElementById("answerSheetTitle");
+    const quizSheetMetaEl = document.getElementById("quizSheetMeta");
+    const answerSheetMetaEl = document.getElementById("answerSheetMeta");
+
+    function shuffle(array) {
+      const result = [...array];
+
+      for (let i = result.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [result[i], result[j]] = [result[j], result[i]];
+      }
+
+      return result;
+    }
+
+    function escapeHtml(value) {
+      return String(value ?? "")
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#039;");
+    }
+
+    function getRangeWords(startId, endId) {
+      return words
+        .filter(word => {
+          const id = Number(word.id);
+          return id >= startId && id <= endId;
+        })
+        .sort((a, b) => Number(a.id) - Number(b.id));
+    }
+
+    function generateQuiz() {
+      const startId = Number(startIdInput.value);
+      const endId = Number(endIdInput.value);
+      const requestedCount = Number(questionCountInput.value);
+      const title = quizTitleInput.value.trim() || "英単語小テスト";
+
+      if (!Number.isFinite(startId) || !Number.isFinite(endId) || startId > endId) {
+        statusEl.textContent = "開始IDと終了IDを確認してください。";
+        return;
+      }
+
+      if (!Number.isFinite(requestedCount) || requestedCount < 1) {
+        statusEl.textContent = "問題数を1以上にしてください。";
+        return;
+      }
+
+      const rangeWords = getRangeWords(startId, endId);
+
+      if (rangeWords.length === 0) {
+        statusEl.textContent = "指定範囲に単語がありません。";
+        return;
+      }
+
+      const actualCount = Math.min(requestedCount, rangeWords.length);
+      currentQuiz = shuffle(rangeWords).slice(0, actualCount);
+
+      renderQuiz({
+        title,
+        startId,
+        endId,
+        requestedCount,
+        actualCount,
+        rangeSize: rangeWords.length
+      });
+
+      setView("quiz");
+
+      statusEl.textContent =
+        `作成完了: ID ${startId}〜${endId} の ${rangeWords.length}語から ${actualCount}問を出題。`;
+    }
+
+    function renderQuiz(info) {
+      quizSheetTitleEl.textContent = info.title;
+      answerSheetTitleEl.textContent = `${info.title} 模範解答`;
+
+      const meta = `範囲: ID ${info.startId}〜${info.endId} / 問題数: ${info.actualCount}問`;
+      quizSheetMetaEl.textContent = meta;
+      answerSheetMetaEl.textContent = meta;
+
+      quizListEl.innerHTML = currentQuiz.map((word, index) => {
+        const number = index + 1;
+        const ja = escapeHtml(word.ja_prompt);
+        const pos = escapeHtml(word.pos || "");
+        const id = escapeHtml(word.id);
+
+        return `
+          <div class="question-item">
+            <div class="q-number">${number}</div>
+            <div class="q-main">
+              <div class="q-prompt">${ja}</div>
+              <div class="q-pos">品詞: ${pos} / ID: ${id}</div>
+              <div class="answer-line"></div>
+            </div>
+          </div>
+        `;
+      }).join("");
+
+      answerListEl.innerHTML = currentQuiz.map((word, index) => {
+        const number = index + 1;
+        const ja = escapeHtml(word.ja_prompt);
+        const pos = escapeHtml(word.pos || "");
+        const answer = escapeHtml(word.answer);
+        const id = escapeHtml(word.id);
+        const aliases = Array.isArray(word.aliases) && word.aliases.length > 0
+          ? `別解: ${word.aliases.map(escapeHtml).join(", ")}`
+          : "";
+        const example = word.example
+          ? `例文: ${escapeHtml(word.example)}`
+          : "";
+
+        return `
+          <div class="question-item">
+            <div class="q-number">${number}</div>
+            <div class="q-main">
+              <div class="q-prompt">${ja}</div>
+              <div class="q-pos">品詞: ${pos} / ID: ${id}</div>
+              <div class="answer-text">${answer}</div>
+              ${aliases ? `<div class="alias-text">${aliases}</div>` : ""}
+              ${example ? `<div class="example-text">${example}</div>` : ""}
+            </div>
+          </div>
+        `;
+      }).join("");
+    }
+
+    function setView(mode) {
+      document.body.classList.remove("view-quiz", "view-answer", "view-both");
+
+      if (mode === "answer") {
+        document.body.classList.add("view-answer");
+      } else if (mode === "both") {
+        document.body.classList.add("view-both");
+      } else {
+        document.body.classList.add("view-quiz");
+      }
+    }
+
+    function printMode(mode) {
+      if (currentQuiz.length === 0) {
+        generateQuiz();
+      }
+
+      document.body.classList.remove("print-quiz", "print-answer", "print-both");
+
+      if (mode === "answer") {
+        document.body.classList.add("print-answer");
+      } else if (mode === "both") {
+        document.body.classList.add("print-both");
+      } else {
+        document.body.classList.add("print-quiz");
+      }
+
+      window.print();
+
+      setTimeout(() => {
+        document.body.classList.remove("print-quiz", "print-answer", "print-both");
+      }, 300);
+    }
+
+    async function loadWords() {
+      try {
+        const response = await fetch("words.json");
+
+        if (!response.ok) {
+          throw new Error("words.json を読み込めませんでした。");
+        }
+
+        words = await response.json();
+
+        if (!Array.isArray(words)) {
+          throw new Error("words.json の形式が配列ではありません。");
+        }
+
+        words.sort((a, b) => Number(a.id) - Number(b.id));
+
+        const minId = Math.min(...words.map(w => Number(w.id)));
+        const maxId = Math.max(...words.map(w => Number(w.id)));
+
+        startIdInput.value = minId;
+        endIdInput.value = maxId;
+        questionCountInput.value = Math.min(20, words.length);
+
+        statusEl.textContent = `${words.length}語を読み込みました。範囲と問題数を指定して作成してください。`;
+
+        generateQuiz();
+      } catch (error) {
+        statusEl.textContent = `エラー: ${error.message}`;
+      }
+    }
+
+    document.getElementById("generateButton").addEventListener("click", generateQuiz);
+    document.getElementById("showQuizButton").addEventListener("click", () => setView("quiz"));
+    document.getElementById("showAnswerButton").addEventListener("click", () => setView("answer"));
+    document.getElementById("showBothButton").addEventListener("click", () => setView("both"));
+
+    document.getElementById("printQuizButton").addEventListener("click", () => printMode("quiz"));
+    document.getElementById("printAnswerButton").addEventListener("click", () => printMode("answer"));
+    document.getElementById("printBothButton").addEventListener("click", () => printMode("both"));
+
+    loadWords();
+  </script>
+</body>
+</html>

@@ -1,0 +1,4688 @@
+[
+  {
+    "id": 1,
+    "answer": "analyze",
+    "ja_prompt": "〜を分析する",
+    "pos": "verb",
+    "aliases": [
+      "examine",
+      "study"
+    ],
+    "hint": "an_____",
+    "example": "Students analyze the passage before choosing the best answer."
+  },
+  {
+    "id": 2,
+    "answer": "compare",
+    "ja_prompt": "〜を比較する",
+    "pos": "verb",
+    "aliases": [
+      "contrast"
+    ],
+    "hint": "co_____",
+    "example": "We compare two opinions in the essay."
+  },
+  {
+    "id": 3,
+    "answer": "contrast",
+    "ja_prompt": "〜を対比する",
+    "pos": "verb",
+    "aliases": [
+      "compare"
+    ],
+    "hint": "co______",
+    "example": "The author contrasts city life with country life."
+  },
+  {
+    "id": 4,
+    "answer": "describe",
+    "ja_prompt": "〜を描写する・説明する",
+    "pos": "verb",
+    "aliases": [
+      "explain"
+    ],
+    "hint": "de______",
+    "example": "The graph describes a change in population."
+  },
+  {
+    "id": 5,
+    "answer": "explain",
+    "ja_prompt": "〜を説明する",
+    "pos": "verb",
+    "aliases": [
+      "describe",
+      "clarify"
+    ],
+    "hint": "ex_____",
+    "example": "The teacher explained the rule with a simple example."
+  },
+  {
+    "id": 6,
+    "answer": "define",
+    "ja_prompt": "〜を定義する",
+    "pos": "verb",
+    "aliases": [
+      "explain"
+    ],
+    "hint": "de____",
+    "example": "The word is defined at the beginning of the article."
+  },
+  {
+    "id": 7,
+    "answer": "identify",
+    "ja_prompt": "〜を特定する・見分ける",
+    "pos": "verb",
+    "aliases": [
+      "recognize"
+    ],
+    "hint": "id______",
+    "example": "Students must identify the main idea of the paragraph."
+  },
+  {
+    "id": 8,
+    "answer": "recognize",
+    "ja_prompt": "〜を認識する・気づく",
+    "pos": "verb",
+    "aliases": [
+      "identify",
+      "notice"
+    ],
+    "hint": "re_______",
+    "example": "Many people recognize the need for clean energy."
+  },
+  {
+    "id": 9,
+    "answer": "indicate",
+    "ja_prompt": "〜を示す・指し示す",
+    "pos": "verb",
+    "aliases": [
+      "show",
+      "suggest"
+    ],
+    "hint": "in______",
+    "example": "The data indicate that sleep affects memory."
+  },
+  {
+    "id": 10,
+    "answer": "suggest",
+    "ja_prompt": "〜を示唆する・提案する",
+    "pos": "verb",
+    "aliases": [
+      "indicate",
+      "propose"
+    ],
+    "hint": "su_____",
+    "example": "The result suggests a strong connection between diet and health."
+  },
+  {
+    "id": 11,
+    "answer": "imply",
+    "ja_prompt": "〜を暗に意味する",
+    "pos": "verb",
+    "aliases": [
+      "suggest"
+    ],
+    "hint": "im___",
+    "example": "His words imply that he disagrees with the plan."
+  },
+  {
+    "id": 12,
+    "answer": "infer",
+    "ja_prompt": "〜を推測する・推論する",
+    "pos": "verb",
+    "aliases": [
+      "deduce"
+    ],
+    "hint": "in___",
+    "example": "We can infer her feelings from her expression."
+  },
+  {
+    "id": 13,
+    "answer": "conclude",
+    "ja_prompt": "〜と結論づける",
+    "pos": "verb",
+    "aliases": [
+      "decide",
+      "infer"
+    ],
+    "hint": "co______",
+    "example": "The writer concludes that education should be free."
+  },
+  {
+    "id": 14,
+    "answer": "argue",
+    "ja_prompt": "〜と主張する・議論する",
+    "pos": "verb",
+    "aliases": [
+      "claim",
+      "debate"
+    ],
+    "hint": "ar___",
+    "example": "The author argues that technology changes society."
+  },
+  {
+    "id": 15,
+    "answer": "claim",
+    "ja_prompt": "〜と主張する",
+    "pos": "verb",
+    "aliases": [
+      "argue",
+      "state"
+    ],
+    "hint": "cl___",
+    "example": "Some researchers claim that exercise improves concentration."
+  },
+  {
+    "id": 16,
+    "answer": "state",
+    "ja_prompt": "〜を述べる",
+    "pos": "verb",
+    "aliases": [
+      "say",
+      "mention"
+    ],
+    "hint": "st___",
+    "example": "The article states that water is becoming scarce."
+  },
+  {
+    "id": 17,
+    "answer": "mention",
+    "ja_prompt": "〜に言及する",
+    "pos": "verb",
+    "aliases": [
+      "refer"
+    ],
+    "hint": "me_____",
+    "example": "The speaker mentioned several problems in the city."
+  },
+  {
+    "id": 18,
+    "answer": "refer",
+    "ja_prompt": "言及する・参照する",
+    "pos": "verb",
+    "aliases": [
+      "mention"
+    ],
+    "hint": "re___",
+    "example": "Please refer to the chart on the next page."
+  },
+  {
+    "id": 19,
+    "answer": "emphasize",
+    "ja_prompt": "〜を強調する",
+    "pos": "verb",
+    "aliases": [
+      "stress"
+    ],
+    "hint": "em_______",
+    "example": "The teacher emphasized the importance of review."
+  },
+  {
+    "id": 20,
+    "answer": "stress",
+    "ja_prompt": "〜を強調する",
+    "pos": "verb",
+    "aliases": [
+      "emphasize"
+    ],
+    "hint": "st____",
+    "example": "The passage stresses the value of cooperation."
+  },
+  {
+    "id": 21,
+    "answer": "focus",
+    "ja_prompt": "焦点を合わせる・集中する",
+    "pos": "verb",
+    "aliases": [
+      "concentrate"
+    ],
+    "hint": "fo___",
+    "example": "The lesson focuses on reading skills."
+  },
+  {
+    "id": 22,
+    "answer": "concentrate",
+    "ja_prompt": "集中する",
+    "pos": "verb",
+    "aliases": [
+      "focus"
+    ],
+    "hint": "co_________",
+    "example": "It is difficult to concentrate in a noisy room."
+  },
+  {
+    "id": 23,
+    "answer": "observe",
+    "ja_prompt": "〜を観察する・気づく",
+    "pos": "verb",
+    "aliases": [
+      "notice",
+      "watch"
+    ],
+    "hint": "ob_____",
+    "example": "Scientists observe changes in the environment."
+  },
+  {
+    "id": 24,
+    "answer": "notice",
+    "ja_prompt": "〜に気づく",
+    "pos": "verb",
+    "aliases": [
+      "observe",
+      "realize"
+    ],
+    "hint": "no____",
+    "example": "I noticed a small mistake in the sentence."
+  },
+  {
+    "id": 25,
+    "answer": "realize",
+    "ja_prompt": "〜に気づく・実現する",
+    "pos": "verb",
+    "aliases": [
+      "understand",
+      "notice"
+    ],
+    "hint": "re_____",
+    "example": "She realized that the answer was wrong."
+  },
+  {
+    "id": 26,
+    "answer": "understand",
+    "ja_prompt": "〜を理解する",
+    "pos": "verb",
+    "aliases": [
+      "comprehend"
+    ],
+    "hint": "un________",
+    "example": "Students should understand the writer's purpose."
+  },
+  {
+    "id": 27,
+    "answer": "comprehend",
+    "ja_prompt": "〜を理解する",
+    "pos": "verb",
+    "aliases": [
+      "understand"
+    ],
+    "hint": "co________",
+    "example": "It takes time to comprehend a difficult text."
+  },
+  {
+    "id": 28,
+    "answer": "interpret",
+    "ja_prompt": "〜を解釈する",
+    "pos": "verb",
+    "aliases": [
+      "understand",
+      "explain"
+    ],
+    "hint": "in_______",
+    "example": "Readers may interpret the poem in different ways."
+  },
+  {
+    "id": 29,
+    "answer": "translate",
+    "ja_prompt": "〜を翻訳する",
+    "pos": "verb",
+    "aliases": [
+      "render"
+    ],
+    "hint": "tr_______",
+    "example": "He translated the sentence into Japanese."
+  },
+  {
+    "id": 30,
+    "answer": "summarize",
+    "ja_prompt": "〜を要約する",
+    "pos": "verb",
+    "aliases": [
+      "sum"
+    ],
+    "hint": "su_______",
+    "example": "Students summarize each paragraph in one sentence."
+  },
+  {
+    "id": 31,
+    "answer": "evaluate",
+    "ja_prompt": "〜を評価する",
+    "pos": "verb",
+    "aliases": [
+      "assess",
+      "judge"
+    ],
+    "hint": "ev______",
+    "example": "We need to evaluate the advantages of the plan."
+  },
+  {
+    "id": 32,
+    "answer": "assess",
+    "ja_prompt": "〜を評価する・査定する",
+    "pos": "verb",
+    "aliases": [
+      "evaluate"
+    ],
+    "hint": "as____",
+    "example": "The test assesses reading and listening skills."
+  },
+  {
+    "id": 33,
+    "answer": "estimate",
+    "ja_prompt": "〜を見積もる・推定する",
+    "pos": "verb",
+    "aliases": [
+      "guess",
+      "calculate"
+    ],
+    "hint": "es______",
+    "example": "Experts estimate that the population will grow."
+  },
+  {
+    "id": 34,
+    "answer": "predict",
+    "ja_prompt": "〜を予測する",
+    "pos": "verb",
+    "aliases": [
+      "forecast"
+    ],
+    "hint": "pr_____",
+    "example": "It is hard to predict the future of the economy."
+  },
+  {
+    "id": 35,
+    "answer": "forecast",
+    "ja_prompt": "〜を予測する",
+    "pos": "verb",
+    "aliases": [
+      "predict"
+    ],
+    "hint": "fo______",
+    "example": "The report forecasts heavy rain tomorrow."
+  },
+  {
+    "id": 36,
+    "answer": "measure",
+    "ja_prompt": "〜を測定する",
+    "pos": "verb",
+    "aliases": [
+      "gauge"
+    ],
+    "hint": "me_____",
+    "example": "Scientists measure the temperature of the water."
+  },
+  {
+    "id": 37,
+    "answer": "calculate",
+    "ja_prompt": "〜を計算する",
+    "pos": "verb",
+    "aliases": [
+      "compute"
+    ],
+    "hint": "ca_______",
+    "example": "Students calculate the average score."
+  },
+  {
+    "id": 38,
+    "answer": "determine",
+    "ja_prompt": "〜を決定する・明らかにする",
+    "pos": "verb",
+    "aliases": [
+      "decide",
+      "establish"
+    ],
+    "hint": "de_______",
+    "example": "Several factors determine a student's success."
+  },
+  {
+    "id": 39,
+    "answer": "establish",
+    "ja_prompt": "〜を確立する・設立する",
+    "pos": "verb",
+    "aliases": [
+      "found",
+      "prove"
+    ],
+    "hint": "es_______",
+    "example": "The school established a new scholarship program."
+  },
+  {
+    "id": 40,
+    "answer": "prove",
+    "ja_prompt": "〜を証明する",
+    "pos": "verb",
+    "aliases": [
+      "demonstrate",
+      "show"
+    ],
+    "hint": "pr___",
+    "example": "The experiment proved that the idea was correct."
+  },
+  {
+    "id": 41,
+    "answer": "demonstrate",
+    "ja_prompt": "〜を実証する・示す",
+    "pos": "verb",
+    "aliases": [
+      "show",
+      "prove"
+    ],
+    "hint": "de_________",
+    "example": "The graph demonstrates a clear trend."
+  },
+  {
+    "id": 42,
+    "answer": "confirm",
+    "ja_prompt": "〜を確認する・裏づける",
+    "pos": "verb",
+    "aliases": [
+      "verify"
+    ],
+    "hint": "co_____",
+    "example": "The results confirmed our first impression."
+  },
+  {
+    "id": 43,
+    "answer": "verify",
+    "ja_prompt": "〜を検証する・確認する",
+    "pos": "verb",
+    "aliases": [
+      "confirm"
+    ],
+    "hint": "ve____",
+    "example": "The information must be verified before publication."
+  },
+  {
+    "id": 44,
+    "answer": "support",
+    "ja_prompt": "〜を支える・支持する",
+    "pos": "verb",
+    "aliases": [
+      "back",
+      "help"
+    ],
+    "hint": "su_____",
+    "example": "Many facts support the author's argument."
+  },
+  {
+    "id": 45,
+    "answer": "oppose",
+    "ja_prompt": "〜に反対する",
+    "pos": "verb",
+    "aliases": [
+      "resist"
+    ],
+    "hint": "op____",
+    "example": "Some residents opposed the construction plan."
+  },
+  {
+    "id": 46,
+    "answer": "reject",
+    "ja_prompt": "〜を拒否する・退ける",
+    "pos": "verb",
+    "aliases": [
+      "refuse"
+    ],
+    "hint": "re____",
+    "example": "The committee rejected the proposal."
+  },
+  {
+    "id": 47,
+    "answer": "accept",
+    "ja_prompt": "〜を受け入れる",
+    "pos": "verb",
+    "aliases": [
+      "admit"
+    ],
+    "hint": "ac____",
+    "example": "People may accept new ideas slowly."
+  },
+  {
+    "id": 48,
+    "answer": "admit",
+    "ja_prompt": "〜を認める・入ることを許す",
+    "pos": "verb",
+    "aliases": [
+      "acknowledge"
+    ],
+    "hint": "ad___",
+    "example": "He admitted that he had made a mistake."
+  },
+  {
+    "id": 49,
+    "answer": "acknowledge",
+    "ja_prompt": "〜を認める・謝意を示す",
+    "pos": "verb",
+    "aliases": [
+      "admit",
+      "recognize"
+    ],
+    "hint": "ac_________",
+    "example": "The writer acknowledges the limits of the study."
+  },
+  {
+    "id": 50,
+    "answer": "deny",
+    "ja_prompt": "〜を否定する",
+    "pos": "verb",
+    "aliases": [
+      "reject"
+    ],
+    "hint": "de__",
+    "example": "The company denied responsibility for the accident."
+  },
+  {
+    "id": 51,
+    "answer": "permit",
+    "ja_prompt": "〜を許可する",
+    "pos": "verb",
+    "aliases": [
+      "allow"
+    ],
+    "hint": "pe____",
+    "example": "The rule permits students to use dictionaries."
+  },
+  {
+    "id": 52,
+    "answer": "allow",
+    "ja_prompt": "〜を許す・可能にする",
+    "pos": "verb",
+    "aliases": [
+      "permit",
+      "enable"
+    ],
+    "hint": "al___",
+    "example": "This system allows users to learn at home."
+  },
+  {
+    "id": 53,
+    "answer": "enable",
+    "ja_prompt": "〜を可能にする",
+    "pos": "verb",
+    "aliases": [
+      "allow"
+    ],
+    "hint": "en____",
+    "example": "Online tools enable students to study anywhere."
+  },
+  {
+    "id": 54,
+    "answer": "encourage",
+    "ja_prompt": "〜を励ます・促す",
+    "pos": "verb",
+    "aliases": [
+      "promote"
+    ],
+    "hint": "en_______",
+    "example": "Teachers encourage students to ask questions."
+  },
+  {
+    "id": 55,
+    "answer": "discourage",
+    "ja_prompt": "〜を思いとどまらせる",
+    "pos": "verb",
+    "aliases": [
+      "deter"
+    ],
+    "hint": "di________",
+    "example": "High costs discourage people from buying electric cars."
+  },
+  {
+    "id": 56,
+    "answer": "promote",
+    "ja_prompt": "〜を促進する・宣伝する",
+    "pos": "verb",
+    "aliases": [
+      "encourage",
+      "advance"
+    ],
+    "hint": "pr_____",
+    "example": "The campaign promotes healthy eating habits."
+  },
+  {
+    "id": 57,
+    "answer": "prevent",
+    "ja_prompt": "〜を防ぐ",
+    "pos": "verb",
+    "aliases": [
+      "stop"
+    ],
+    "hint": "pr_____",
+    "example": "Regular exercise helps prevent disease."
+  },
+  {
+    "id": 58,
+    "answer": "avoid",
+    "ja_prompt": "〜を避ける",
+    "pos": "verb",
+    "aliases": [
+      "escape"
+    ],
+    "hint": "av___",
+    "example": "Students should avoid careless mistakes."
+  },
+  {
+    "id": 59,
+    "answer": "reduce",
+    "ja_prompt": "〜を減らす",
+    "pos": "verb",
+    "aliases": [
+      "decrease",
+      "lower"
+    ],
+    "hint": "re____",
+    "example": "Recycling can reduce waste."
+  },
+  {
+    "id": 60,
+    "answer": "decrease",
+    "ja_prompt": "減少する・〜を減らす",
+    "pos": "verb",
+    "aliases": [
+      "reduce",
+      "decline"
+    ],
+    "hint": "de______",
+    "example": "The number of visitors decreased last year."
+  },
+  {
+    "id": 61,
+    "answer": "increase",
+    "ja_prompt": "増加する・〜を増やす",
+    "pos": "verb",
+    "aliases": [
+      "grow",
+      "raise"
+    ],
+    "hint": "in______",
+    "example": "Reading books can increase vocabulary."
+  },
+  {
+    "id": 62,
+    "answer": "raise",
+    "ja_prompt": "〜を上げる・育てる・提起する",
+    "pos": "verb",
+    "aliases": [
+      "increase",
+      "bring up"
+    ],
+    "hint": "ra___",
+    "example": "The article raises an important question."
+  },
+  {
+    "id": 63,
+    "answer": "improve",
+    "ja_prompt": "〜を改善する・向上する",
+    "pos": "verb",
+    "aliases": [
+      "enhance"
+    ],
+    "hint": "im_____",
+    "example": "Practice improves speaking ability."
+  },
+  {
+    "id": 64,
+    "answer": "enhance",
+    "ja_prompt": "〜を高める・向上させる",
+    "pos": "verb",
+    "aliases": [
+      "improve"
+    ],
+    "hint": "en_____",
+    "example": "Music can enhance the effect of a movie."
+  },
+  {
+    "id": 65,
+    "answer": "develop",
+    "ja_prompt": "発達する・〜を開発する",
+    "pos": "verb",
+    "aliases": [
+      "grow",
+      "create"
+    ],
+    "hint": "de_____",
+    "example": "Children develop language skills through conversation."
+  },
+  {
+    "id": 66,
+    "answer": "maintain",
+    "ja_prompt": "〜を維持する・主張する",
+    "pos": "verb",
+    "aliases": [
+      "keep",
+      "preserve"
+    ],
+    "hint": "ma______",
+    "example": "It is important to maintain a healthy lifestyle."
+  },
+  {
+    "id": 67,
+    "answer": "preserve",
+    "ja_prompt": "〜を保存する・保護する",
+    "pos": "verb",
+    "aliases": [
+      "protect",
+      "maintain"
+    ],
+    "hint": "pr______",
+    "example": "We must preserve old buildings for future generations."
+  },
+  {
+    "id": 68,
+    "answer": "protect",
+    "ja_prompt": "〜を守る・保護する",
+    "pos": "verb",
+    "aliases": [
+      "defend",
+      "preserve"
+    ],
+    "hint": "pr_____",
+    "example": "Laws protect workers from unfair treatment."
+  },
+  {
+    "id": 69,
+    "answer": "save",
+    "ja_prompt": "〜を救う・節約する・保存する",
+    "pos": "verb",
+    "aliases": [
+      "rescue",
+      "preserve"
+    ],
+    "hint": "sa__",
+    "example": "Using less water can save energy."
+  },
+  {
+    "id": 70,
+    "answer": "waste",
+    "ja_prompt": "〜を浪費する",
+    "pos": "verb",
+    "aliases": [
+      "squander"
+    ],
+    "hint": "wa___",
+    "example": "We should not waste food or time."
+  },
+  {
+    "id": 71,
+    "answer": "consume",
+    "ja_prompt": "〜を消費する",
+    "pos": "verb",
+    "aliases": [
+      "use"
+    ],
+    "hint": "co_____",
+    "example": "Modern society consumes a large amount of energy."
+  },
+  {
+    "id": 72,
+    "answer": "produce",
+    "ja_prompt": "〜を生産する・生み出す",
+    "pos": "verb",
+    "aliases": [
+      "create",
+      "generate"
+    ],
+    "hint": "pr_____",
+    "example": "The factory produces parts for cars."
+  },
+  {
+    "id": 73,
+    "answer": "generate",
+    "ja_prompt": "〜を生み出す・発生させる",
+    "pos": "verb",
+    "aliases": [
+      "produce",
+      "create"
+    ],
+    "hint": "ge______",
+    "example": "Wind power generates electricity."
+  },
+  {
+    "id": 74,
+    "answer": "create",
+    "ja_prompt": "〜を創造する・作る",
+    "pos": "verb",
+    "aliases": [
+      "produce",
+      "make"
+    ],
+    "hint": "cr____",
+    "example": "Artists create new ways of seeing the world."
+  },
+  {
+    "id": 75,
+    "answer": "invent",
+    "ja_prompt": "〜を発明する",
+    "pos": "verb",
+    "aliases": [
+      "create"
+    ],
+    "hint": "in____",
+    "example": "The telephone was invented in the nineteenth century."
+  },
+  {
+    "id": 76,
+    "answer": "discover",
+    "ja_prompt": "〜を発見する",
+    "pos": "verb",
+    "aliases": [
+      "find"
+    ],
+    "hint": "di______",
+    "example": "Researchers discovered a new species of fish."
+  },
+  {
+    "id": 77,
+    "answer": "explore",
+    "ja_prompt": "〜を探究する・探索する",
+    "pos": "verb",
+    "aliases": [
+      "investigate"
+    ],
+    "hint": "ex_____",
+    "example": "The book explores the history of language."
+  },
+  {
+    "id": 78,
+    "answer": "investigate",
+    "ja_prompt": "〜を調査する",
+    "pos": "verb",
+    "aliases": [
+      "examine",
+      "explore"
+    ],
+    "hint": "in_________",
+    "example": "The police investigated the cause of the fire."
+  },
+  {
+    "id": 79,
+    "answer": "examine",
+    "ja_prompt": "〜を調べる・診察する",
+    "pos": "verb",
+    "aliases": [
+      "inspect",
+      "analyze"
+    ],
+    "hint": "ex_____",
+    "example": "The doctor examined the patient's eyes."
+  },
+  {
+    "id": 80,
+    "answer": "inspect",
+    "ja_prompt": "〜を検査する",
+    "pos": "verb",
+    "aliases": [
+      "examine",
+      "check"
+    ],
+    "hint": "in_____",
+    "example": "Workers inspect the machines every morning."
+  },
+  {
+    "id": 81,
+    "answer": "select",
+    "ja_prompt": "〜を選ぶ",
+    "pos": "verb",
+    "aliases": [
+      "choose"
+    ],
+    "hint": "se____",
+    "example": "Please select the best answer from the choices."
+  },
+  {
+    "id": 82,
+    "answer": "choose",
+    "ja_prompt": "〜を選ぶ",
+    "pos": "verb",
+    "aliases": [
+      "select",
+      "pick"
+    ],
+    "hint": "ch____",
+    "example": "Students choose courses according to their interests."
+  },
+  {
+    "id": 83,
+    "answer": "prefer",
+    "ja_prompt": "〜を好む",
+    "pos": "verb",
+    "aliases": [
+      "like better"
+    ],
+    "hint": "pr____",
+    "example": "Many people prefer trains to buses."
+  },
+  {
+    "id": 84,
+    "answer": "decide",
+    "ja_prompt": "決める・判断する",
+    "pos": "verb",
+    "aliases": [
+      "determine"
+    ],
+    "hint": "de____",
+    "example": "We decided to join the volunteer program."
+  },
+  {
+    "id": 85,
+    "answer": "attempt",
+    "ja_prompt": "〜を試みる",
+    "pos": "verb",
+    "aliases": [
+      "try"
+    ],
+    "hint": "at_____",
+    "example": "The student attempted to solve the difficult problem."
+  },
+  {
+    "id": 86,
+    "answer": "try",
+    "ja_prompt": "〜を試す・試みる",
+    "pos": "verb",
+    "aliases": [
+      "attempt"
+    ],
+    "hint": "tr_",
+    "example": "Try to read the whole passage first."
+  },
+  {
+    "id": 87,
+    "answer": "achieve",
+    "ja_prompt": "〜を達成する",
+    "pos": "verb",
+    "aliases": [
+      "accomplish",
+      "attain"
+    ],
+    "hint": "ac_____",
+    "example": "She achieved her goal through hard work."
+  },
+  {
+    "id": 88,
+    "answer": "accomplish",
+    "ja_prompt": "〜を成し遂げる",
+    "pos": "verb",
+    "aliases": [
+      "achieve"
+    ],
+    "hint": "ac________",
+    "example": "The team accomplished the task in one week."
+  },
+  {
+    "id": 89,
+    "answer": "attain",
+    "ja_prompt": "〜を達成する・到達する",
+    "pos": "verb",
+    "aliases": [
+      "achieve",
+      "reach"
+    ],
+    "hint": "at____",
+    "example": "It takes effort to attain a high level of skill."
+  },
+  {
+    "id": 90,
+    "answer": "obtain",
+    "ja_prompt": "〜を得る・入手する",
+    "pos": "verb",
+    "aliases": [
+      "get",
+      "acquire"
+    ],
+    "hint": "ob____",
+    "example": "Students can obtain information from the Internet."
+  },
+  {
+    "id": 91,
+    "answer": "acquire",
+    "ja_prompt": "〜を習得する・獲得する",
+    "pos": "verb",
+    "aliases": [
+      "obtain",
+      "gain"
+    ],
+    "hint": "ac_____",
+    "example": "Children acquire language by listening to adults."
+  },
+  {
+    "id": 92,
+    "answer": "gain",
+    "ja_prompt": "〜を得る・増す",
+    "pos": "verb",
+    "aliases": [
+      "obtain",
+      "acquire"
+    ],
+    "hint": "ga__",
+    "example": "Students gain confidence through practice."
+  },
+  {
+    "id": 93,
+    "answer": "provide",
+    "ja_prompt": "〜を提供する",
+    "pos": "verb",
+    "aliases": [
+      "supply",
+      "offer"
+    ],
+    "hint": "pr_____",
+    "example": "The program provides free meals for children."
+  },
+  {
+    "id": 94,
+    "answer": "supply",
+    "ja_prompt": "〜を供給する",
+    "pos": "verb",
+    "aliases": [
+      "provide"
+    ],
+    "hint": "su____",
+    "example": "The river supplies water to the town."
+  },
+  {
+    "id": 95,
+    "answer": "offer",
+    "ja_prompt": "〜を提供する・申し出る",
+    "pos": "verb",
+    "aliases": [
+      "provide",
+      "give"
+    ],
+    "hint": "of___",
+    "example": "The company offers many chances to learn."
+  },
+  {
+    "id": 96,
+    "answer": "require",
+    "ja_prompt": "〜を必要とする・要求する",
+    "pos": "verb",
+    "aliases": [
+      "need",
+      "demand"
+    ],
+    "hint": "re_____",
+    "example": "This job requires good communication skills."
+  },
+  {
+    "id": 97,
+    "answer": "demand",
+    "ja_prompt": "〜を要求する・需要がある",
+    "pos": "verb",
+    "aliases": [
+      "require"
+    ],
+    "hint": "de____",
+    "example": "Customers demand better service."
+  },
+  {
+    "id": 98,
+    "answer": "depend",
+    "ja_prompt": "頼る・依存する",
+    "pos": "verb",
+    "aliases": [
+      "rely"
+    ],
+    "hint": "de____",
+    "example": "Success depends on effort and preparation."
+  },
+  {
+    "id": 99,
+    "answer": "rely",
+    "ja_prompt": "頼る・依存する",
+    "pos": "verb",
+    "aliases": [
+      "depend"
+    ],
+    "hint": "re__",
+    "example": "Many students rely on online dictionaries."
+  },
+  {
+    "id": 100,
+    "answer": "involve",
+    "ja_prompt": "〜を含む・伴う",
+    "pos": "verb",
+    "aliases": [
+      "include",
+      "entail"
+    ],
+    "hint": "in_____",
+    "example": "The project involves students from several schools."
+  },
+  {
+    "id": 101,
+    "answer": "include",
+    "ja_prompt": "〜を含む",
+    "pos": "verb",
+    "aliases": [
+      "contain",
+      "involve"
+    ],
+    "hint": "in_____",
+    "example": "The price includes breakfast."
+  },
+  {
+    "id": 102,
+    "answer": "contain",
+    "ja_prompt": "〜を含む・収容する",
+    "pos": "verb",
+    "aliases": [
+      "include"
+    ],
+    "hint": "co_____",
+    "example": "This food contains too much sugar."
+  },
+  {
+    "id": 103,
+    "answer": "consist",
+    "ja_prompt": "成り立つ・構成される",
+    "pos": "verb",
+    "aliases": [
+      "be composed"
+    ],
+    "hint": "co_____",
+    "example": "The course consists of ten lessons."
+  },
+  {
+    "id": 104,
+    "answer": "represent",
+    "ja_prompt": "〜を表す・代表する",
+    "pos": "verb",
+    "aliases": [
+      "stand for"
+    ],
+    "hint": "re_______",
+    "example": "The dove represents peace."
+  },
+  {
+    "id": 105,
+    "answer": "replace",
+    "ja_prompt": "〜に取って代わる",
+    "pos": "verb",
+    "aliases": [
+      "substitute"
+    ],
+    "hint": "re_____",
+    "example": "Robots may replace some simple jobs."
+  },
+  {
+    "id": 106,
+    "answer": "occur",
+    "ja_prompt": "起こる・発生する",
+    "pos": "verb",
+    "aliases": [
+      "happen"
+    ],
+    "hint": "oc___",
+    "example": "Natural disasters can occur without warning."
+  },
+  {
+    "id": 107,
+    "answer": "happen",
+    "ja_prompt": "起こる",
+    "pos": "verb",
+    "aliases": [
+      "occur"
+    ],
+    "hint": "ha____",
+    "example": "Accidents happen when people are careless."
+  },
+  {
+    "id": 108,
+    "answer": "emerge",
+    "ja_prompt": "現れる・明らかになる",
+    "pos": "verb",
+    "aliases": [
+      "appear"
+    ],
+    "hint": "em____",
+    "example": "A new problem emerged after the meeting."
+  },
+  {
+    "id": 109,
+    "answer": "appear",
+    "ja_prompt": "現れる・〜のように見える",
+    "pos": "verb",
+    "aliases": [
+      "seem",
+      "emerge"
+    ],
+    "hint": "ap____",
+    "example": "The answer appears simple at first."
+  },
+  {
+    "id": 110,
+    "answer": "disappear",
+    "ja_prompt": "消える",
+    "pos": "verb",
+    "aliases": [
+      "vanish"
+    ],
+    "hint": "di_______",
+    "example": "Many traditional customs have disappeared."
+  },
+  {
+    "id": 111,
+    "answer": "remain",
+    "ja_prompt": "残る・〜のままである",
+    "pos": "verb",
+    "aliases": [
+      "stay"
+    ],
+    "hint": "re____",
+    "example": "The reason remains unclear."
+  },
+  {
+    "id": 112,
+    "answer": "survive",
+    "ja_prompt": "生き残る・存続する",
+    "pos": "verb",
+    "aliases": [
+      "live"
+    ],
+    "hint": "su_____",
+    "example": "Some small shops survive by serving local people."
+  },
+  {
+    "id": 113,
+    "answer": "suffer",
+    "ja_prompt": "苦しむ・被害を受ける",
+    "pos": "verb",
+    "aliases": [
+      "experience pain"
+    ],
+    "hint": "su____",
+    "example": "Many children suffer from a lack of food."
+  },
+  {
+    "id": 114,
+    "answer": "affect",
+    "ja_prompt": "〜に影響を与える",
+    "pos": "verb",
+    "aliases": [
+      "influence"
+    ],
+    "hint": "af____",
+    "example": "Weather affects people's moods."
+  },
+  {
+    "id": 115,
+    "answer": "adapt",
+    "ja_prompt": "適応する・〜を適合させる",
+    "pos": "verb",
+    "aliases": [
+      "adjust"
+    ],
+    "hint": "ad___",
+    "example": "Animals adapt to changes in their environment."
+  },
+  {
+    "id": 116,
+    "answer": "adjust",
+    "ja_prompt": "調整する・適応する",
+    "pos": "verb",
+    "aliases": [
+      "adapt"
+    ],
+    "hint": "ad____",
+    "example": "Students must adjust to a new school life."
+  },
+  {
+    "id": 117,
+    "answer": "participate",
+    "ja_prompt": "参加する",
+    "pos": "verb",
+    "aliases": [
+      "join"
+    ],
+    "hint": "pa_________",
+    "example": "Many students participate in club activities."
+  },
+  {
+    "id": 118,
+    "answer": "contribute",
+    "ja_prompt": "貢献する・寄与する",
+    "pos": "verb",
+    "aliases": [
+      "help",
+      "donate"
+    ],
+    "hint": "co________",
+    "example": "Volunteers contribute to the local community."
+  },
+  {
+    "id": 119,
+    "answer": "cooperate",
+    "ja_prompt": "協力する",
+    "pos": "verb",
+    "aliases": [
+      "collaborate"
+    ],
+    "hint": "co_______",
+    "example": "Students cooperate to finish the project."
+  },
+  {
+    "id": 120,
+    "answer": "compete",
+    "ja_prompt": "競争する",
+    "pos": "verb",
+    "aliases": [
+      "contend"
+    ],
+    "hint": "co_____",
+    "example": "Companies compete to sell better products."
+  },
+  {
+    "id": 121,
+    "answer": "communicate",
+    "ja_prompt": "伝える・意思疎通する",
+    "pos": "verb",
+    "aliases": [
+      "convey"
+    ],
+    "hint": "co_________",
+    "example": "People communicate through language and gestures."
+  },
+  {
+    "id": 122,
+    "answer": "convey",
+    "ja_prompt": "〜を伝える",
+    "pos": "verb",
+    "aliases": [
+      "communicate",
+      "express"
+    ],
+    "hint": "co____",
+    "example": "A good picture can convey a strong message."
+  },
+  {
+    "id": 123,
+    "answer": "express",
+    "ja_prompt": "〜を表現する",
+    "pos": "verb",
+    "aliases": [
+      "convey",
+      "show"
+    ],
+    "hint": "ex_____",
+    "example": "Students should express their opinions clearly."
+  },
+  {
+    "id": 124,
+    "answer": "respond",
+    "ja_prompt": "反応する・返答する",
+    "pos": "verb",
+    "aliases": [
+      "reply",
+      "react"
+    ],
+    "hint": "re_____",
+    "example": "The audience responded with loud applause."
+  },
+  {
+    "id": 125,
+    "answer": "react",
+    "ja_prompt": "反応する",
+    "pos": "verb",
+    "aliases": [
+      "respond"
+    ],
+    "hint": "re___",
+    "example": "People react differently to stress."
+  },
+  {
+    "id": 126,
+    "answer": "solve",
+    "ja_prompt": "〜を解決する",
+    "pos": "verb",
+    "aliases": [
+      "resolve"
+    ],
+    "hint": "so___",
+    "example": "Education can help solve social problems."
+  },
+  {
+    "id": 127,
+    "answer": "resolve",
+    "ja_prompt": "〜を解決する・決意する",
+    "pos": "verb",
+    "aliases": [
+      "solve",
+      "settle"
+    ],
+    "hint": "re_____",
+    "example": "The two countries tried to resolve the conflict."
+  },
+  {
+    "id": 128,
+    "answer": "manage",
+    "ja_prompt": "なんとか〜する・管理する",
+    "pos": "verb",
+    "aliases": [
+      "handle",
+      "control"
+    ],
+    "hint": "ma____",
+    "example": "She managed to finish the report on time."
+  },
+  {
+    "id": 129,
+    "answer": "handle",
+    "ja_prompt": "〜を扱う・処理する",
+    "pos": "verb",
+    "aliases": [
+      "manage",
+      "deal with"
+    ],
+    "hint": "ha____",
+    "example": "Teachers must handle many different situations."
+  },
+  {
+    "id": 130,
+    "answer": "control",
+    "ja_prompt": "〜を制御する・管理する",
+    "pos": "verb",
+    "aliases": [
+      "manage"
+    ],
+    "hint": "co_____",
+    "example": "It is difficult to control information on the Internet."
+  },
+  {
+    "id": 131,
+    "answer": "spread",
+    "ja_prompt": "広がる・〜を広める",
+    "pos": "verb",
+    "aliases": [
+      "diffuse"
+    ],
+    "hint": "sp____",
+    "example": "False information can spread quickly online."
+  },
+  {
+    "id": 132,
+    "answer": "vary",
+    "ja_prompt": "さまざまである・変化する",
+    "pos": "verb",
+    "aliases": [
+      "differ",
+      "change"
+    ],
+    "hint": "va__",
+    "example": "Customs vary from country to country."
+  },
+  {
+    "id": 133,
+    "answer": "differ",
+    "ja_prompt": "異なる",
+    "pos": "verb",
+    "aliases": [
+      "vary"
+    ],
+    "hint": "di____",
+    "example": "Opinions differ among students."
+  },
+  {
+    "id": 134,
+    "answer": "exist",
+    "ja_prompt": "存在する",
+    "pos": "verb",
+    "aliases": [
+      "be"
+    ],
+    "hint": "ex___",
+    "example": "Many different cultures exist in the world."
+  },
+  {
+    "id": 135,
+    "answer": "lead",
+    "ja_prompt": "導く・つながる",
+    "pos": "verb",
+    "aliases": [
+      "cause",
+      "guide"
+    ],
+    "hint": "le__",
+    "example": "Too much stress can lead to health problems."
+  },
+  {
+    "id": 136,
+    "answer": "cause",
+    "ja_prompt": "〜を引き起こす",
+    "pos": "verb",
+    "aliases": [
+      "bring about",
+      "lead to"
+    ],
+    "hint": "ca___",
+    "example": "Smoking can cause serious illness."
+  },
+  {
+    "id": 137,
+    "answer": "reflect",
+    "ja_prompt": "〜を反映する・熟考する",
+    "pos": "verb",
+    "aliases": [
+      "mirror",
+      "think"
+    ],
+    "hint": "re_____",
+    "example": "Language reflects culture."
+  },
+  {
+    "id": 138,
+    "answer": "reveal",
+    "ja_prompt": "〜を明らかにする",
+    "pos": "verb",
+    "aliases": [
+      "show",
+      "disclose"
+    ],
+    "hint": "re____",
+    "example": "The survey revealed a serious problem."
+  },
+  {
+    "id": 139,
+    "answer": "access",
+    "ja_prompt": "〜にアクセスする・利用する",
+    "pos": "verb",
+    "aliases": [
+      "reach",
+      "use"
+    ],
+    "hint": "ac____",
+    "example": "Students can access many articles online."
+  },
+  {
+    "id": 140,
+    "answer": "influence",
+    "ja_prompt": "影響・影響力",
+    "pos": "noun",
+    "aliases": [
+      "effect",
+      "impact"
+    ],
+    "hint": "in_______",
+    "example": "Parents have a strong influence on children."
+  },
+  {
+    "id": 141,
+    "answer": "effect",
+    "ja_prompt": "効果・影響",
+    "pos": "noun",
+    "aliases": [
+      "impact",
+      "result"
+    ],
+    "hint": "ef____",
+    "example": "The effect of the medicine was clear."
+  },
+  {
+    "id": 142,
+    "answer": "impact",
+    "ja_prompt": "強い影響・衝撃",
+    "pos": "noun",
+    "aliases": [
+      "effect",
+      "influence"
+    ],
+    "hint": "im____",
+    "example": "The Internet has had a great impact on education."
+  },
+  {
+    "id": 143,
+    "answer": "factor",
+    "ja_prompt": "要因・要素",
+    "pos": "noun",
+    "aliases": [
+      "element",
+      "cause"
+    ],
+    "hint": "fa____",
+    "example": "Cost is an important factor in choosing a school."
+  },
+  {
+    "id": 144,
+    "answer": "reason",
+    "ja_prompt": "理由・理性",
+    "pos": "noun",
+    "aliases": [
+      "cause",
+      "logic"
+    ],
+    "hint": "re____",
+    "example": "There are several reasons for this change."
+  },
+  {
+    "id": 145,
+    "answer": "result",
+    "ja_prompt": "結果",
+    "pos": "noun",
+    "aliases": [
+      "outcome",
+      "consequence"
+    ],
+    "hint": "re____",
+    "example": "The result of the survey was surprising."
+  },
+  {
+    "id": 146,
+    "answer": "consequence",
+    "ja_prompt": "結果・帰結",
+    "pos": "noun",
+    "aliases": [
+      "result",
+      "outcome"
+    ],
+    "hint": "co_________",
+    "example": "Pollution is a serious consequence of rapid growth."
+  },
+  {
+    "id": 147,
+    "answer": "outcome",
+    "ja_prompt": "結果・成果",
+    "pos": "noun",
+    "aliases": [
+      "result",
+      "consequence"
+    ],
+    "hint": "ou_____",
+    "example": "The outcome of the experiment was unexpected."
+  },
+  {
+    "id": 148,
+    "answer": "advantage",
+    "ja_prompt": "利点・有利な点",
+    "pos": "noun",
+    "aliases": [
+      "benefit",
+      "merit"
+    ],
+    "hint": "ad_______",
+    "example": "Studying abroad has many advantages."
+  },
+  {
+    "id": 149,
+    "answer": "disadvantage",
+    "ja_prompt": "欠点・不利な点",
+    "pos": "noun",
+    "aliases": [
+      "drawback"
+    ],
+    "hint": "di__________",
+    "example": "One disadvantage of online classes is isolation."
+  },
+  {
+    "id": 150,
+    "answer": "benefit",
+    "ja_prompt": "利益・恩恵",
+    "pos": "noun",
+    "aliases": [
+      "advantage"
+    ],
+    "hint": "be_____",
+    "example": "Regular exercise has many health benefits."
+  },
+  {
+    "id": 151,
+    "answer": "drawback",
+    "ja_prompt": "欠点・短所",
+    "pos": "noun",
+    "aliases": [
+      "disadvantage"
+    ],
+    "hint": "dr______",
+    "example": "The main drawback is the high cost."
+  },
+  {
+    "id": 152,
+    "answer": "feature",
+    "ja_prompt": "特徴・機能",
+    "pos": "noun",
+    "aliases": [
+      "characteristic",
+      "aspect"
+    ],
+    "hint": "fe_____",
+    "example": "This app has several useful features."
+  },
+  {
+    "id": 153,
+    "answer": "characteristic",
+    "ja_prompt": "特徴・特性",
+    "pos": "noun",
+    "aliases": [
+      "feature",
+      "trait"
+    ],
+    "hint": "ch____________",
+    "example": "Patience is an important characteristic of a good teacher."
+  },
+  {
+    "id": 154,
+    "answer": "aspect",
+    "ja_prompt": "側面・観点",
+    "pos": "noun",
+    "aliases": [
+      "side",
+      "feature"
+    ],
+    "hint": "as____",
+    "example": "The article discusses several aspects of education."
+  },
+  {
+    "id": 155,
+    "answer": "detail",
+    "ja_prompt": "詳細・細部",
+    "pos": "noun",
+    "aliases": [
+      "particular"
+    ],
+    "hint": "de____",
+    "example": "Please read the details carefully."
+  },
+  {
+    "id": 156,
+    "answer": "evidence",
+    "ja_prompt": "証拠・根拠",
+    "pos": "noun",
+    "aliases": [
+      "proof"
+    ],
+    "hint": "ev______",
+    "example": "There is little evidence to support the idea."
+  },
+  {
+    "id": 157,
+    "answer": "proof",
+    "ja_prompt": "証明・証拠",
+    "pos": "noun",
+    "aliases": [
+      "evidence"
+    ],
+    "hint": "pr___",
+    "example": "The photo is proof that he was there."
+  },
+  {
+    "id": 158,
+    "answer": "source",
+    "ja_prompt": "情報源・源",
+    "pos": "noun",
+    "aliases": [
+      "origin"
+    ],
+    "hint": "so____",
+    "example": "Books are still an important source of knowledge."
+  },
+  {
+    "id": 159,
+    "answer": "origin",
+    "ja_prompt": "起源・由来",
+    "pos": "noun",
+    "aliases": [
+      "source"
+    ],
+    "hint": "or____",
+    "example": "The origin of the custom is not clear."
+  },
+  {
+    "id": 160,
+    "answer": "resource",
+    "ja_prompt": "資源・資料",
+    "pos": "noun",
+    "aliases": [
+      "asset"
+    ],
+    "hint": "re______",
+    "example": "Water is a valuable resource."
+  },
+  {
+    "id": 161,
+    "answer": "environment",
+    "ja_prompt": "環境",
+    "pos": "noun",
+    "aliases": [
+      "surroundings"
+    ],
+    "hint": "en_________",
+    "example": "We must protect the natural environment."
+  },
+  {
+    "id": 162,
+    "answer": "society",
+    "ja_prompt": "社会",
+    "pos": "noun",
+    "aliases": [
+      "community"
+    ],
+    "hint": "so_____",
+    "example": "Technology changes the structure of society."
+  },
+  {
+    "id": 163,
+    "answer": "community",
+    "ja_prompt": "地域社会・共同体",
+    "pos": "noun",
+    "aliases": [
+      "society"
+    ],
+    "hint": "co_______",
+    "example": "The festival brings the community together."
+  },
+  {
+    "id": 164,
+    "answer": "culture",
+    "ja_prompt": "文化",
+    "pos": "noun",
+    "aliases": [
+      "civilization"
+    ],
+    "hint": "cu_____",
+    "example": "Language is closely related to culture."
+  },
+  {
+    "id": 165,
+    "answer": "tradition",
+    "ja_prompt": "伝統",
+    "pos": "noun",
+    "aliases": [
+      "custom"
+    ],
+    "hint": "tr_______",
+    "example": "Many traditions are passed down through families."
+  },
+  {
+    "id": 166,
+    "answer": "custom",
+    "ja_prompt": "慣習・習慣",
+    "pos": "noun",
+    "aliases": [
+      "tradition",
+      "practice"
+    ],
+    "hint": "cu____",
+    "example": "It is a custom to bow in Japan."
+  },
+  {
+    "id": 167,
+    "answer": "generation",
+    "ja_prompt": "世代",
+    "pos": "noun",
+    "aliases": [
+      "age group"
+    ],
+    "hint": "ge________",
+    "example": "Each generation has different values."
+  },
+  {
+    "id": 168,
+    "answer": "population",
+    "ja_prompt": "人口・集団",
+    "pos": "noun",
+    "aliases": [
+      "people"
+    ],
+    "hint": "po________",
+    "example": "The population of the city is increasing."
+  },
+  {
+    "id": 169,
+    "answer": "individual",
+    "ja_prompt": "個人",
+    "pos": "noun",
+    "aliases": [
+      "person"
+    ],
+    "hint": "in________",
+    "example": "Education should respect each individual."
+  },
+  {
+    "id": 170,
+    "answer": "neighbor",
+    "ja_prompt": "隣人・近所の人",
+    "pos": "noun",
+    "aliases": [
+      "resident"
+    ],
+    "hint": "ne______",
+    "example": "She helped her elderly neighbor."
+  },
+  {
+    "id": 171,
+    "answer": "resident",
+    "ja_prompt": "居住者・住民",
+    "pos": "noun",
+    "aliases": [
+      "inhabitant"
+    ],
+    "hint": "re______",
+    "example": "Many residents opposed the new road."
+  },
+  {
+    "id": 172,
+    "answer": "citizen",
+    "ja_prompt": "市民・国民",
+    "pos": "noun",
+    "aliases": [
+      "resident",
+      "national"
+    ],
+    "hint": "ci_____",
+    "example": "Citizens have both rights and responsibilities."
+  },
+  {
+    "id": 173,
+    "answer": "government",
+    "ja_prompt": "政府",
+    "pos": "noun",
+    "aliases": [
+      "administration"
+    ],
+    "hint": "go________",
+    "example": "The government introduced a new policy."
+  },
+  {
+    "id": 174,
+    "answer": "policy",
+    "ja_prompt": "政策・方針",
+    "pos": "noun",
+    "aliases": [
+      "plan"
+    ],
+    "hint": "po____",
+    "example": "The policy aims to reduce waste."
+  },
+  {
+    "id": 175,
+    "answer": "system",
+    "ja_prompt": "制度・体系・仕組み",
+    "pos": "noun",
+    "aliases": [
+      "structure"
+    ],
+    "hint": "sy____",
+    "example": "The education system differs from country to country."
+  },
+  {
+    "id": 176,
+    "answer": "structure",
+    "ja_prompt": "構造・仕組み",
+    "pos": "noun",
+    "aliases": [
+      "system"
+    ],
+    "hint": "st_______",
+    "example": "The structure of the essay is clear."
+  },
+  {
+    "id": 177,
+    "answer": "method",
+    "ja_prompt": "方法",
+    "pos": "noun",
+    "aliases": [
+      "way",
+      "approach"
+    ],
+    "hint": "me____",
+    "example": "This method is useful for learning vocabulary."
+  },
+  {
+    "id": 178,
+    "answer": "approach",
+    "ja_prompt": "取り組み方・接近",
+    "pos": "noun",
+    "aliases": [
+      "method",
+      "way"
+    ],
+    "hint": "ap______",
+    "example": "A new approach is needed to solve the problem."
+  },
+  {
+    "id": 179,
+    "answer": "process",
+    "ja_prompt": "過程・プロセス",
+    "pos": "noun",
+    "aliases": [
+      "procedure"
+    ],
+    "hint": "pr_____",
+    "example": "Learning a language is a long process."
+  },
+  {
+    "id": 180,
+    "answer": "procedure",
+    "ja_prompt": "手順・手続き",
+    "pos": "noun",
+    "aliases": [
+      "process"
+    ],
+    "hint": "pr_______",
+    "example": "Follow the procedure carefully."
+  },
+  {
+    "id": 181,
+    "answer": "purpose",
+    "ja_prompt": "目的",
+    "pos": "noun",
+    "aliases": [
+      "aim",
+      "goal"
+    ],
+    "hint": "pu_____",
+    "example": "The purpose of the study is to compare two methods."
+  },
+  {
+    "id": 182,
+    "answer": "aim",
+    "ja_prompt": "目的・狙い",
+    "pos": "noun",
+    "aliases": [
+      "goal",
+      "purpose"
+    ],
+    "hint": "ai_",
+    "example": "The aim of the program is to help children."
+  },
+  {
+    "id": 183,
+    "answer": "goal",
+    "ja_prompt": "目標",
+    "pos": "noun",
+    "aliases": [
+      "aim",
+      "objective"
+    ],
+    "hint": "go__",
+    "example": "Her goal is to become a doctor."
+  },
+  {
+    "id": 184,
+    "answer": "objective",
+    "ja_prompt": "目的・目標",
+    "pos": "noun",
+    "aliases": [
+      "goal",
+      "aim"
+    ],
+    "hint": "ob_______",
+    "example": "The main objective is to improve reading skills."
+  },
+  {
+    "id": 185,
+    "answer": "issue",
+    "ja_prompt": "問題・論点",
+    "pos": "noun",
+    "aliases": [
+      "problem",
+      "topic"
+    ],
+    "hint": "is___",
+    "example": "Climate change is a global issue."
+  },
+  {
+    "id": 186,
+    "answer": "problem",
+    "ja_prompt": "問題",
+    "pos": "noun",
+    "aliases": [
+      "issue",
+      "difficulty"
+    ],
+    "hint": "pr_____",
+    "example": "The problem is more serious than it seems."
+  },
+  {
+    "id": 187,
+    "answer": "difficulty",
+    "ja_prompt": "困難・難しさ",
+    "pos": "noun",
+    "aliases": [
+      "problem",
+      "hardship"
+    ],
+    "hint": "di________",
+    "example": "Many students have difficulty understanding the passage."
+  },
+  {
+    "id": 188,
+    "answer": "challenge",
+    "ja_prompt": "課題・難題",
+    "pos": "noun",
+    "aliases": [
+      "difficulty"
+    ],
+    "hint": "ch_______",
+    "example": "Aging society is a major challenge for Japan."
+  },
+  {
+    "id": 189,
+    "answer": "solution",
+    "ja_prompt": "解決策",
+    "pos": "noun",
+    "aliases": [
+      "answer",
+      "resolution"
+    ],
+    "hint": "so______",
+    "example": "Education may be part of the solution."
+  },
+  {
+    "id": 190,
+    "answer": "conflict",
+    "ja_prompt": "対立・紛争",
+    "pos": "noun",
+    "aliases": [
+      "dispute"
+    ],
+    "hint": "co______",
+    "example": "The story describes a conflict between two families."
+  },
+  {
+    "id": 191,
+    "answer": "relationship",
+    "ja_prompt": "関係",
+    "pos": "noun",
+    "aliases": [
+      "connection"
+    ],
+    "hint": "re__________",
+    "example": "The relationship between diet and health is important."
+  },
+  {
+    "id": 192,
+    "answer": "connection",
+    "ja_prompt": "つながり・関係",
+    "pos": "noun",
+    "aliases": [
+      "relationship",
+      "link"
+    ],
+    "hint": "co________",
+    "example": "There is a clear connection between sleep and memory."
+  },
+  {
+    "id": 193,
+    "answer": "link",
+    "ja_prompt": "関連・つながり",
+    "pos": "noun",
+    "aliases": [
+      "connection"
+    ],
+    "hint": "li__",
+    "example": "The study shows a link between exercise and happiness."
+  },
+  {
+    "id": 194,
+    "answer": "role",
+    "ja_prompt": "役割",
+    "pos": "noun",
+    "aliases": [
+      "part",
+      "function"
+    ],
+    "hint": "ro__",
+    "example": "Schools play an important role in society."
+  },
+  {
+    "id": 195,
+    "answer": "function",
+    "ja_prompt": "機能・役割",
+    "pos": "noun",
+    "aliases": [
+      "role"
+    ],
+    "hint": "fu______",
+    "example": "The main function of language is communication."
+  },
+  {
+    "id": 196,
+    "answer": "ability",
+    "ja_prompt": "能力",
+    "pos": "noun",
+    "aliases": [
+      "skill",
+      "capacity"
+    ],
+    "hint": "ab_____",
+    "example": "Reading ability improves with practice."
+  },
+  {
+    "id": 197,
+    "answer": "skill",
+    "ja_prompt": "技能・技術",
+    "pos": "noun",
+    "aliases": [
+      "ability"
+    ],
+    "hint": "sk___",
+    "example": "Communication skills are important in many jobs."
+  },
+  {
+    "id": 198,
+    "answer": "knowledge",
+    "ja_prompt": "知識",
+    "pos": "noun",
+    "aliases": [
+      "information"
+    ],
+    "hint": "kn_______",
+    "example": "Knowledge alone is not enough."
+  },
+  {
+    "id": 199,
+    "answer": "information",
+    "ja_prompt": "情報",
+    "pos": "noun",
+    "aliases": [
+      "data"
+    ],
+    "hint": "in_________",
+    "example": "The Internet provides a lot of information."
+  },
+  {
+    "id": 200,
+    "answer": "data",
+    "ja_prompt": "データ・資料",
+    "pos": "noun",
+    "aliases": [
+      "information"
+    ],
+    "hint": "da__",
+    "example": "The data show a clear increase."
+  },
+  {
+    "id": 201,
+    "answer": "research",
+    "ja_prompt": "研究・調査",
+    "pos": "noun",
+    "aliases": [
+      "study"
+    ],
+    "hint": "re______",
+    "example": "Recent research shows the importance of sleep."
+  },
+  {
+    "id": 202,
+    "answer": "survey",
+    "ja_prompt": "調査",
+    "pos": "noun",
+    "aliases": [
+      "poll"
+    ],
+    "hint": "su____",
+    "example": "The survey asked students about their study habits."
+  },
+  {
+    "id": 203,
+    "answer": "experiment",
+    "ja_prompt": "実験",
+    "pos": "noun",
+    "aliases": [
+      "test"
+    ],
+    "hint": "ex________",
+    "example": "The experiment was simple but effective."
+  },
+  {
+    "id": 204,
+    "answer": "experience",
+    "ja_prompt": "経験",
+    "pos": "noun",
+    "aliases": [
+      "practice"
+    ],
+    "hint": "ex________",
+    "example": "Travel gives people valuable experience."
+  },
+  {
+    "id": 205,
+    "answer": "opportunity",
+    "ja_prompt": "機会",
+    "pos": "noun",
+    "aliases": [
+      "chance"
+    ],
+    "hint": "op_________",
+    "example": "Students should have the opportunity to study abroad."
+  },
+  {
+    "id": 206,
+    "answer": "chance",
+    "ja_prompt": "機会・可能性",
+    "pos": "noun",
+    "aliases": [
+      "opportunity"
+    ],
+    "hint": "ch____",
+    "example": "Everyone deserves a chance to learn."
+  },
+  {
+    "id": 207,
+    "answer": "choice",
+    "ja_prompt": "選択・選択肢",
+    "pos": "noun",
+    "aliases": [
+      "option",
+      "selection"
+    ],
+    "hint": "ch____",
+    "example": "Students have many choices after graduation."
+  },
+  {
+    "id": 208,
+    "answer": "option",
+    "ja_prompt": "選択肢",
+    "pos": "noun",
+    "aliases": [
+      "choice"
+    ],
+    "hint": "op____",
+    "example": "Online classes are another option."
+  },
+  {
+    "id": 209,
+    "answer": "decision",
+    "ja_prompt": "決定・判断",
+    "pos": "noun",
+    "aliases": [
+      "choice"
+    ],
+    "hint": "de______",
+    "example": "Making a decision is sometimes difficult."
+  },
+  {
+    "id": 210,
+    "answer": "responsibility",
+    "ja_prompt": "責任",
+    "pos": "noun",
+    "aliases": [
+      "duty"
+    ],
+    "hint": "re____________",
+    "example": "Citizens have a responsibility to follow rules."
+  },
+  {
+    "id": 211,
+    "answer": "duty",
+    "ja_prompt": "義務・職務",
+    "pos": "noun",
+    "aliases": [
+      "responsibility"
+    ],
+    "hint": "du__",
+    "example": "It is our duty to protect the environment."
+  },
+  {
+    "id": 212,
+    "answer": "right",
+    "ja_prompt": "権利・正しいこと",
+    "pos": "noun",
+    "aliases": [
+      "entitlement"
+    ],
+    "hint": "ri___",
+    "example": "People have the right to express opinions."
+  },
+  {
+    "id": 213,
+    "answer": "freedom",
+    "ja_prompt": "自由",
+    "pos": "noun",
+    "aliases": [
+      "liberty"
+    ],
+    "hint": "fr_____",
+    "example": "Freedom of speech is important in a democracy."
+  },
+  {
+    "id": 214,
+    "answer": "value",
+    "ja_prompt": "価値・価値観",
+    "pos": "noun",
+    "aliases": [
+      "worth"
+    ],
+    "hint": "va___",
+    "example": "Different cultures have different values."
+  },
+  {
+    "id": 215,
+    "answer": "cost",
+    "ja_prompt": "費用・代償",
+    "pos": "noun",
+    "aliases": [
+      "expense",
+      "price"
+    ],
+    "hint": "co__",
+    "example": "The cost of living is rising."
+  },
+  {
+    "id": 216,
+    "answer": "expense",
+    "ja_prompt": "費用・出費",
+    "pos": "noun",
+    "aliases": [
+      "cost"
+    ],
+    "hint": "ex_____",
+    "example": "Education is a major expense for many families."
+  },
+  {
+    "id": 217,
+    "answer": "income",
+    "ja_prompt": "収入",
+    "pos": "noun",
+    "aliases": [
+      "earnings"
+    ],
+    "hint": "in____",
+    "example": "A stable income is important for family life."
+  },
+  {
+    "id": 218,
+    "answer": "economy",
+    "ja_prompt": "経済",
+    "pos": "noun",
+    "aliases": [
+      "market"
+    ],
+    "hint": "ec_____",
+    "example": "Tourism is important to the local economy."
+  },
+  {
+    "id": 219,
+    "answer": "industry",
+    "ja_prompt": "産業・工業",
+    "pos": "noun",
+    "aliases": [
+      "business"
+    ],
+    "hint": "in______",
+    "example": "The automobile industry employs many people."
+  },
+  {
+    "id": 220,
+    "answer": "company",
+    "ja_prompt": "会社",
+    "pos": "noun",
+    "aliases": [
+      "firm"
+    ],
+    "hint": "co_____",
+    "example": "The company sells products around the world."
+  },
+  {
+    "id": 221,
+    "answer": "employee",
+    "ja_prompt": "従業員",
+    "pos": "noun",
+    "aliases": [
+      "worker"
+    ],
+    "hint": "em______",
+    "example": "Employees need safe working conditions."
+  },
+  {
+    "id": 222,
+    "answer": "employer",
+    "ja_prompt": "雇用主",
+    "pos": "noun",
+    "aliases": [
+      "boss"
+    ],
+    "hint": "em______",
+    "example": "Employers should provide fair wages."
+  },
+  {
+    "id": 223,
+    "answer": "customer",
+    "ja_prompt": "顧客・客",
+    "pos": "noun",
+    "aliases": [
+      "client"
+    ],
+    "hint": "cu______",
+    "example": "Customers expect quick service."
+  },
+  {
+    "id": 224,
+    "answer": "consumer",
+    "ja_prompt": "消費者",
+    "pos": "noun",
+    "aliases": [
+      "buyer"
+    ],
+    "hint": "co______",
+    "example": "Consumers are becoming more careful about food safety."
+  },
+  {
+    "id": 225,
+    "answer": "product",
+    "ja_prompt": "製品・産物",
+    "pos": "noun",
+    "aliases": [
+      "goods"
+    ],
+    "hint": "pr_____",
+    "example": "This product is popular among young people."
+  },
+  {
+    "id": 226,
+    "answer": "market",
+    "ja_prompt": "市場",
+    "pos": "noun",
+    "aliases": [
+      "trade area"
+    ],
+    "hint": "ma____",
+    "example": "The market for electric cars is growing."
+  },
+  {
+    "id": 227,
+    "answer": "technology",
+    "ja_prompt": "科学技術・技術",
+    "pos": "noun",
+    "aliases": [
+      "technique"
+    ],
+    "hint": "te________",
+    "example": "Technology has changed the way we communicate."
+  },
+  {
+    "id": 228,
+    "answer": "device",
+    "ja_prompt": "装置・機器",
+    "pos": "noun",
+    "aliases": [
+      "tool",
+      "machine"
+    ],
+    "hint": "de____",
+    "example": "A smartphone is a useful device."
+  },
+  {
+    "id": 229,
+    "answer": "machine",
+    "ja_prompt": "機械",
+    "pos": "noun",
+    "aliases": [
+      "device"
+    ],
+    "hint": "ma_____",
+    "example": "The machine can translate simple sentences."
+  },
+  {
+    "id": 230,
+    "answer": "tool",
+    "ja_prompt": "道具・手段",
+    "pos": "noun",
+    "aliases": [
+      "instrument"
+    ],
+    "hint": "to__",
+    "example": "A dictionary is a useful tool for learners."
+  },
+  {
+    "id": 231,
+    "answer": "media",
+    "ja_prompt": "メディア・媒体",
+    "pos": "noun",
+    "aliases": [
+      "press"
+    ],
+    "hint": "me___",
+    "example": "Social media influence young people's opinions."
+  },
+  {
+    "id": 232,
+    "answer": "advertisement",
+    "ja_prompt": "広告",
+    "pos": "noun",
+    "aliases": [
+      "ad"
+    ],
+    "hint": "ad___________",
+    "example": "Advertisements often use famous people."
+  },
+  {
+    "id": 233,
+    "answer": "transportation",
+    "ja_prompt": "交通・輸送",
+    "pos": "noun",
+    "aliases": [
+      "transport"
+    ],
+    "hint": "tr____________",
+    "example": "Public transportation is convenient in large cities."
+  },
+  {
+    "id": 234,
+    "answer": "vehicle",
+    "ja_prompt": "乗り物・車両",
+    "pos": "noun",
+    "aliases": [
+      "car"
+    ],
+    "hint": "ve_____",
+    "example": "Electric vehicles are becoming more common."
+  },
+  {
+    "id": 235,
+    "answer": "pollution",
+    "ja_prompt": "汚染",
+    "pos": "noun",
+    "aliases": [
+      "contamination"
+    ],
+    "hint": "po_______",
+    "example": "Air pollution is a serious problem in many cities."
+  },
+  {
+    "id": 236,
+    "answer": "climate",
+    "ja_prompt": "気候",
+    "pos": "noun",
+    "aliases": [
+      "weather pattern"
+    ],
+    "hint": "cl_____",
+    "example": "The climate is changing around the world."
+  },
+  {
+    "id": 237,
+    "answer": "temperature",
+    "ja_prompt": "温度・気温",
+    "pos": "noun",
+    "aliases": [
+      "heat level"
+    ],
+    "hint": "te_________",
+    "example": "The temperature rose quickly in the afternoon."
+  },
+  {
+    "id": 238,
+    "answer": "species",
+    "ja_prompt": "種・生物種",
+    "pos": "noun",
+    "aliases": [
+      "kind"
+    ],
+    "hint": "sp_____",
+    "example": "Many species are in danger of extinction."
+  },
+  {
+    "id": 239,
+    "answer": "habitat",
+    "ja_prompt": "生息地",
+    "pos": "noun",
+    "aliases": [
+      "environment"
+    ],
+    "hint": "ha_____",
+    "example": "Forests are the habitat of many animals."
+  },
+  {
+    "id": 240,
+    "answer": "energy",
+    "ja_prompt": "エネルギー",
+    "pos": "noun",
+    "aliases": [
+      "power"
+    ],
+    "hint": "en____",
+    "example": "Renewable energy is important for the future."
+  },
+  {
+    "id": 241,
+    "answer": "fuel",
+    "ja_prompt": "燃料",
+    "pos": "noun",
+    "aliases": [
+      "energy source"
+    ],
+    "hint": "fu__",
+    "example": "Cars need fuel to run."
+  },
+  {
+    "id": 242,
+    "answer": "material",
+    "ja_prompt": "材料・物質",
+    "pos": "noun",
+    "aliases": [
+      "substance"
+    ],
+    "hint": "ma______",
+    "example": "Plastic is a common material in daily life."
+  },
+  {
+    "id": 243,
+    "answer": "substance",
+    "ja_prompt": "物質",
+    "pos": "noun",
+    "aliases": [
+      "material"
+    ],
+    "hint": "su_______",
+    "example": "Water is a simple but important substance."
+  },
+  {
+    "id": 244,
+    "answer": "article",
+    "ja_prompt": "記事・論説",
+    "pos": "noun",
+    "aliases": [
+      "essay",
+      "text"
+    ],
+    "hint": "ar_____",
+    "example": "The article discusses the problem of waste."
+  },
+  {
+    "id": 245,
+    "answer": "passage",
+    "ja_prompt": "一節・文章",
+    "pos": "noun",
+    "aliases": [
+      "text"
+    ],
+    "hint": "pa_____",
+    "example": "Read the passage and answer the questions."
+  },
+  {
+    "id": 246,
+    "answer": "paragraph",
+    "ja_prompt": "段落",
+    "pos": "noun",
+    "aliases": [
+      "section"
+    ],
+    "hint": "pa_______",
+    "example": "The first paragraph introduces the topic."
+  },
+  {
+    "id": 247,
+    "answer": "sentence",
+    "ja_prompt": "文",
+    "pos": "noun",
+    "aliases": [
+      "statement"
+    ],
+    "hint": "se______",
+    "example": "The sentence has two possible meanings."
+  },
+  {
+    "id": 248,
+    "answer": "context",
+    "ja_prompt": "文脈・状況",
+    "pos": "noun",
+    "aliases": [
+      "background"
+    ],
+    "hint": "co_____",
+    "example": "The meaning depends on the context."
+  },
+  {
+    "id": 249,
+    "answer": "topic",
+    "ja_prompt": "話題・主題",
+    "pos": "noun",
+    "aliases": [
+      "subject",
+      "theme"
+    ],
+    "hint": "to___",
+    "example": "The topic of the essay is education."
+  },
+  {
+    "id": 250,
+    "answer": "theme",
+    "ja_prompt": "主題・テーマ",
+    "pos": "noun",
+    "aliases": [
+      "topic"
+    ],
+    "hint": "th___",
+    "example": "The main theme of the story is friendship."
+  },
+  {
+    "id": 251,
+    "answer": "author",
+    "ja_prompt": "著者・作者",
+    "pos": "noun",
+    "aliases": [
+      "writer"
+    ],
+    "hint": "au____",
+    "example": "The author gives several examples."
+  },
+  {
+    "id": 252,
+    "answer": "reader",
+    "ja_prompt": "読者",
+    "pos": "noun",
+    "aliases": [
+      "audience"
+    ],
+    "hint": "re____",
+    "example": "The writer wants readers to think about equality."
+  },
+  {
+    "id": 253,
+    "answer": "audience",
+    "ja_prompt": "聴衆・観客・読者",
+    "pos": "noun",
+    "aliases": [
+      "listeners",
+      "viewers"
+    ],
+    "hint": "au______",
+    "example": "The speech impressed the audience."
+  },
+  {
+    "id": 254,
+    "answer": "attitude",
+    "ja_prompt": "態度・考え方",
+    "pos": "noun",
+    "aliases": [
+      "view",
+      "stance"
+    ],
+    "hint": "at______",
+    "example": "His attitude toward study changed after the trip."
+  },
+  {
+    "id": 255,
+    "answer": "opinion",
+    "ja_prompt": "意見",
+    "pos": "noun",
+    "aliases": [
+      "view"
+    ],
+    "hint": "op_____",
+    "example": "Students should express their opinions clearly."
+  },
+  {
+    "id": 256,
+    "answer": "view",
+    "ja_prompt": "見解・眺め",
+    "pos": "noun",
+    "aliases": [
+      "opinion",
+      "perspective"
+    ],
+    "hint": "vi__",
+    "example": "The passage presents a different view of success."
+  },
+  {
+    "id": 257,
+    "answer": "perspective",
+    "ja_prompt": "観点・見方",
+    "pos": "noun",
+    "aliases": [
+      "viewpoint"
+    ],
+    "hint": "pe_________",
+    "example": "Travel gives people a new perspective."
+  },
+  {
+    "id": 258,
+    "answer": "concept",
+    "ja_prompt": "概念・考え",
+    "pos": "noun",
+    "aliases": [
+      "idea"
+    ],
+    "hint": "co_____",
+    "example": "The concept of freedom differs among cultures."
+  },
+  {
+    "id": 259,
+    "answer": "idea",
+    "ja_prompt": "考え・発想",
+    "pos": "noun",
+    "aliases": [
+      "concept"
+    ],
+    "hint": "id__",
+    "example": "The idea sounds simple but is hard to practice."
+  },
+  {
+    "id": 260,
+    "answer": "principle",
+    "ja_prompt": "原則・主義",
+    "pos": "noun",
+    "aliases": [
+      "rule"
+    ],
+    "hint": "pr_______",
+    "example": "The principle of fairness is important."
+  },
+  {
+    "id": 261,
+    "answer": "theory",
+    "ja_prompt": "理論・学説",
+    "pos": "noun",
+    "aliases": [
+      "hypothesis"
+    ],
+    "hint": "th____",
+    "example": "The theory explains the behavior of animals."
+  },
+  {
+    "id": 262,
+    "answer": "hypothesis",
+    "ja_prompt": "仮説",
+    "pos": "noun",
+    "aliases": [
+      "theory"
+    ],
+    "hint": "hy________",
+    "example": "The scientist tested a new hypothesis."
+  },
+  {
+    "id": 263,
+    "answer": "trend",
+    "ja_prompt": "傾向・流行",
+    "pos": "noun",
+    "aliases": [
+      "tendency"
+    ],
+    "hint": "tr___",
+    "example": "The graph shows a recent trend."
+  },
+  {
+    "id": 264,
+    "answer": "tendency",
+    "ja_prompt": "傾向",
+    "pos": "noun",
+    "aliases": [
+      "trend",
+      "inclination"
+    ],
+    "hint": "te______",
+    "example": "People have a tendency to avoid difficult tasks."
+  },
+  {
+    "id": 265,
+    "answer": "rate",
+    "ja_prompt": "割合・速度・料金",
+    "pos": "noun",
+    "aliases": [
+      "ratio"
+    ],
+    "hint": "ra__",
+    "example": "The birth rate is decreasing."
+  },
+  {
+    "id": 266,
+    "answer": "amount",
+    "ja_prompt": "量・金額",
+    "pos": "noun",
+    "aliases": [
+      "quantity"
+    ],
+    "hint": "am____",
+    "example": "The amount of plastic waste is increasing."
+  },
+  {
+    "id": 267,
+    "answer": "quantity",
+    "ja_prompt": "量",
+    "pos": "noun",
+    "aliases": [
+      "amount"
+    ],
+    "hint": "qu______",
+    "example": "Quality is more important than quantity."
+  },
+  {
+    "id": 268,
+    "answer": "quality",
+    "ja_prompt": "質・品質",
+    "pos": "noun",
+    "aliases": [
+      "standard"
+    ],
+    "hint": "qu_____",
+    "example": "The quality of education matters."
+  },
+  {
+    "id": 269,
+    "answer": "standard",
+    "ja_prompt": "基準・標準",
+    "pos": "noun",
+    "aliases": [
+      "level",
+      "criterion"
+    ],
+    "hint": "st______",
+    "example": "Schools should maintain high standards."
+  },
+  {
+    "id": 270,
+    "answer": "level",
+    "ja_prompt": "水準・段階",
+    "pos": "noun",
+    "aliases": [
+      "degree",
+      "stage"
+    ],
+    "hint": "le___",
+    "example": "The level of air pollution is high."
+  },
+  {
+    "id": 271,
+    "answer": "degree",
+    "ja_prompt": "程度・度合い・学位",
+    "pos": "noun",
+    "aliases": [
+      "level",
+      "extent"
+    ],
+    "hint": "de____",
+    "example": "The degree of damage was serious."
+  },
+  {
+    "id": 272,
+    "answer": "extent",
+    "ja_prompt": "程度・範囲",
+    "pos": "noun",
+    "aliases": [
+      "degree",
+      "range"
+    ],
+    "hint": "ex____",
+    "example": "We do not know the full extent of the problem."
+  },
+  {
+    "id": 273,
+    "answer": "range",
+    "ja_prompt": "範囲・幅",
+    "pos": "noun",
+    "aliases": [
+      "extent"
+    ],
+    "hint": "ra___",
+    "example": "The book covers a wide range of topics."
+  },
+  {
+    "id": 274,
+    "answer": "variety",
+    "ja_prompt": "多様性・種類",
+    "pos": "noun",
+    "aliases": [
+      "diversity",
+      "kind"
+    ],
+    "hint": "va_____",
+    "example": "The library has a variety of books."
+  },
+  {
+    "id": 275,
+    "answer": "diversity",
+    "ja_prompt": "多様性",
+    "pos": "noun",
+    "aliases": [
+      "variety"
+    ],
+    "hint": "di_______",
+    "example": "Cultural diversity makes society richer."
+  },
+  {
+    "id": 276,
+    "answer": "similarity",
+    "ja_prompt": "類似点",
+    "pos": "noun",
+    "aliases": [
+      "resemblance"
+    ],
+    "hint": "si________",
+    "example": "There are many similarities between the two languages."
+  },
+  {
+    "id": 277,
+    "answer": "difference",
+    "ja_prompt": "違い・差",
+    "pos": "noun",
+    "aliases": [
+      "distinction"
+    ],
+    "hint": "di________",
+    "example": "The difference between the two words is small."
+  },
+  {
+    "id": 278,
+    "answer": "important",
+    "ja_prompt": "重要な",
+    "pos": "adjective",
+    "aliases": [
+      "significant",
+      "crucial"
+    ],
+    "hint": "im_______",
+    "example": "Education is important for the future."
+  },
+  {
+    "id": 279,
+    "answer": "significant",
+    "ja_prompt": "重要な・かなりの",
+    "pos": "adjective",
+    "aliases": [
+      "important",
+      "meaningful"
+    ],
+    "hint": "si_________",
+    "example": "There was a significant increase in visitors."
+  },
+  {
+    "id": 280,
+    "answer": "crucial",
+    "ja_prompt": "極めて重要な",
+    "pos": "adjective",
+    "aliases": [
+      "essential",
+      "vital"
+    ],
+    "hint": "cr_____",
+    "example": "Sleep is crucial for memory."
+  },
+  {
+    "id": 281,
+    "answer": "essential",
+    "ja_prompt": "不可欠な・本質的な",
+    "pos": "adjective",
+    "aliases": [
+      "necessary",
+      "crucial"
+    ],
+    "hint": "es_______",
+    "example": "Water is essential for life."
+  },
+  {
+    "id": 282,
+    "answer": "necessary",
+    "ja_prompt": "必要な",
+    "pos": "adjective",
+    "aliases": [
+      "essential",
+      "required"
+    ],
+    "hint": "ne_______",
+    "example": "Careful reading is necessary for this test."
+  },
+  {
+    "id": 283,
+    "answer": "available",
+    "ja_prompt": "利用可能な・手に入る",
+    "pos": "adjective",
+    "aliases": [
+      "accessible"
+    ],
+    "hint": "av_______",
+    "example": "Free Wi-Fi is available in the library."
+  },
+  {
+    "id": 284,
+    "answer": "accessible",
+    "ja_prompt": "利用しやすい・近づきやすい",
+    "pos": "adjective",
+    "aliases": [
+      "available",
+      "reachable"
+    ],
+    "hint": "ac________",
+    "example": "Online lessons make education more accessible."
+  },
+  {
+    "id": 285,
+    "answer": "possible",
+    "ja_prompt": "可能な",
+    "pos": "adjective",
+    "aliases": [
+      "feasible"
+    ],
+    "hint": "po______",
+    "example": "It is possible to learn vocabulary little by little."
+  },
+  {
+    "id": 286,
+    "answer": "impossible",
+    "ja_prompt": "不可能な",
+    "pos": "adjective",
+    "aliases": [
+      "unfeasible"
+    ],
+    "hint": "im________",
+    "example": "It is impossible to finish without practice."
+  },
+  {
+    "id": 287,
+    "answer": "likely",
+    "ja_prompt": "起こりそうな・ありそうな",
+    "pos": "adjective",
+    "aliases": [
+      "probable"
+    ],
+    "hint": "li____",
+    "example": "It is likely that the price will rise."
+  },
+  {
+    "id": 288,
+    "answer": "unlikely",
+    "ja_prompt": "起こりそうにない",
+    "pos": "adjective",
+    "aliases": [
+      "improbable"
+    ],
+    "hint": "un______",
+    "example": "It is unlikely that everyone will agree."
+  },
+  {
+    "id": 289,
+    "answer": "certain",
+    "ja_prompt": "確かな・ある特定の",
+    "pos": "adjective",
+    "aliases": [
+      "sure",
+      "specific"
+    ],
+    "hint": "ce_____",
+    "example": "The cause of the problem is not certain."
+  },
+  {
+    "id": 290,
+    "answer": "uncertain",
+    "ja_prompt": "不確かな",
+    "pos": "adjective",
+    "aliases": [
+      "unsure"
+    ],
+    "hint": "un_______",
+    "example": "The future of the town remains uncertain."
+  },
+  {
+    "id": 291,
+    "answer": "clear",
+    "ja_prompt": "明確な・澄んだ",
+    "pos": "adjective",
+    "aliases": [
+      "obvious"
+    ],
+    "hint": "cl___",
+    "example": "The writer gives a clear explanation."
+  },
+  {
+    "id": 292,
+    "answer": "obvious",
+    "ja_prompt": "明らかな",
+    "pos": "adjective",
+    "aliases": [
+      "clear",
+      "evident"
+    ],
+    "hint": "ob_____",
+    "example": "It is obvious that the plan has problems."
+  },
+  {
+    "id": 293,
+    "answer": "complex",
+    "ja_prompt": "複雑な",
+    "pos": "adjective",
+    "aliases": [
+      "complicated"
+    ],
+    "hint": "co_____",
+    "example": "Human behavior is complex."
+  },
+  {
+    "id": 294,
+    "answer": "simple",
+    "ja_prompt": "単純な・簡単な",
+    "pos": "adjective",
+    "aliases": [
+      "easy",
+      "plain"
+    ],
+    "hint": "si____",
+    "example": "The answer is not as simple as it looks."
+  },
+  {
+    "id": 295,
+    "answer": "similar",
+    "ja_prompt": "似ている",
+    "pos": "adjective",
+    "aliases": [
+      "alike"
+    ],
+    "hint": "si_____",
+    "example": "The two words have similar meanings."
+  },
+  {
+    "id": 296,
+    "answer": "different",
+    "ja_prompt": "異なる",
+    "pos": "adjective",
+    "aliases": [
+      "various",
+      "distinct"
+    ],
+    "hint": "di_______",
+    "example": "Different cultures have different customs."
+  },
+  {
+    "id": 297,
+    "answer": "various",
+    "ja_prompt": "さまざまな",
+    "pos": "adjective",
+    "aliases": [
+      "different",
+      "diverse"
+    ],
+    "hint": "va_____",
+    "example": "Students read various kinds of texts."
+  },
+  {
+    "id": 298,
+    "answer": "diverse",
+    "ja_prompt": "多様な",
+    "pos": "adjective",
+    "aliases": [
+      "various"
+    ],
+    "hint": "di_____",
+    "example": "A diverse society has many kinds of people."
+  },
+  {
+    "id": 299,
+    "answer": "common",
+    "ja_prompt": "共通の・よくある",
+    "pos": "adjective",
+    "aliases": [
+      "ordinary",
+      "usual"
+    ],
+    "hint": "co____",
+    "example": "This is a common mistake among learners."
+  },
+  {
+    "id": 300,
+    "answer": "ordinary",
+    "ja_prompt": "普通の・通常の",
+    "pos": "adjective",
+    "aliases": [
+      "common",
+      "usual"
+    ],
+    "hint": "or______",
+    "example": "The story is about ordinary people."
+  },
+  {
+    "id": 301,
+    "answer": "rare",
+    "ja_prompt": "まれな・希少な",
+    "pos": "adjective",
+    "aliases": [
+      "uncommon"
+    ],
+    "hint": "ra__",
+    "example": "It is rare to see snow in this area."
+  },
+  {
+    "id": 302,
+    "answer": "unique",
+    "ja_prompt": "独特の・唯一の",
+    "pos": "adjective",
+    "aliases": [
+      "distinctive"
+    ],
+    "hint": "un____",
+    "example": "Each language has unique features."
+  },
+  {
+    "id": 303,
+    "answer": "general",
+    "ja_prompt": "一般的な・全体的な",
+    "pos": "adjective",
+    "aliases": [
+      "overall"
+    ],
+    "hint": "ge_____",
+    "example": "The general idea is easy to understand."
+  },
+  {
+    "id": 304,
+    "answer": "specific",
+    "ja_prompt": "具体的な・特定の",
+    "pos": "adjective",
+    "aliases": [
+      "particular",
+      "certain"
+    ],
+    "hint": "sp______",
+    "example": "The question asks for a specific example."
+  },
+  {
+    "id": 305,
+    "answer": "particular",
+    "ja_prompt": "特定の・特別な",
+    "pos": "adjective",
+    "aliases": [
+      "specific"
+    ],
+    "hint": "pa________",
+    "example": "This word has a particular meaning in science."
+  },
+  {
+    "id": 306,
+    "answer": "major",
+    "ja_prompt": "主要な・大きな",
+    "pos": "adjective",
+    "aliases": [
+      "main",
+      "important"
+    ],
+    "hint": "ma___",
+    "example": "Air pollution is a major issue."
+  },
+  {
+    "id": 307,
+    "answer": "minor",
+    "ja_prompt": "小さな・重要でない",
+    "pos": "adjective",
+    "aliases": [
+      "small",
+      "less important"
+    ],
+    "hint": "mi___",
+    "example": "The essay has a few minor errors."
+  },
+  {
+    "id": 308,
+    "answer": "main",
+    "ja_prompt": "主な",
+    "pos": "adjective",
+    "aliases": [
+      "major",
+      "primary"
+    ],
+    "hint": "ma__",
+    "example": "The main purpose of the article is to persuade readers."
+  },
+  {
+    "id": 309,
+    "answer": "primary",
+    "ja_prompt": "主要な・第一の",
+    "pos": "adjective",
+    "aliases": [
+      "main",
+      "chief"
+    ],
+    "hint": "pr_____",
+    "example": "The primary goal is to improve health."
+  },
+  {
+    "id": 310,
+    "answer": "modern",
+    "ja_prompt": "現代の・近代的な",
+    "pos": "adjective",
+    "aliases": [
+      "contemporary"
+    ],
+    "hint": "mo____",
+    "example": "Modern technology has changed education."
+  },
+  {
+    "id": 311,
+    "answer": "traditional",
+    "ja_prompt": "伝統的な",
+    "pos": "adjective",
+    "aliases": [
+      "conventional"
+    ],
+    "hint": "tr_________",
+    "example": "Traditional festivals are important to local communities."
+  },
+  {
+    "id": 312,
+    "answer": "ancient",
+    "ja_prompt": "古代の",
+    "pos": "adjective",
+    "aliases": [
+      "old"
+    ],
+    "hint": "an_____",
+    "example": "Ancient cities often developed near rivers."
+  },
+  {
+    "id": 313,
+    "answer": "current",
+    "ja_prompt": "現在の・流通している",
+    "pos": "adjective",
+    "aliases": [
+      "present"
+    ],
+    "hint": "cu_____",
+    "example": "The current situation is difficult."
+  },
+  {
+    "id": 314,
+    "answer": "recent",
+    "ja_prompt": "最近の",
+    "pos": "adjective",
+    "aliases": [
+      "new",
+      "latest"
+    ],
+    "hint": "re____",
+    "example": "Recent studies show the importance of sleep."
+  },
+  {
+    "id": 315,
+    "answer": "previous",
+    "ja_prompt": "前の・以前の",
+    "pos": "adjective",
+    "aliases": [
+      "former"
+    ],
+    "hint": "pr______",
+    "example": "Please review the previous lesson."
+  },
+  {
+    "id": 316,
+    "answer": "former",
+    "ja_prompt": "前の・元の",
+    "pos": "adjective",
+    "aliases": [
+      "previous"
+    ],
+    "hint": "fo____",
+    "example": "The former president visited the school."
+  },
+  {
+    "id": 317,
+    "answer": "future",
+    "ja_prompt": "将来の",
+    "pos": "adjective",
+    "aliases": [
+      "coming"
+    ],
+    "hint": "fu____",
+    "example": "Future generations will face new challenges."
+  },
+  {
+    "id": 318,
+    "answer": "local",
+    "ja_prompt": "地元の・地域の",
+    "pos": "adjective",
+    "aliases": [
+      "regional"
+    ],
+    "hint": "lo___",
+    "example": "Local people supported the festival."
+  },
+  {
+    "id": 319,
+    "answer": "global",
+    "ja_prompt": "世界的な",
+    "pos": "adjective",
+    "aliases": [
+      "worldwide"
+    ],
+    "hint": "gl____",
+    "example": "Climate change is a global problem."
+  },
+  {
+    "id": 320,
+    "answer": "national",
+    "ja_prompt": "国家の・全国的な",
+    "pos": "adjective",
+    "aliases": [
+      "domestic"
+    ],
+    "hint": "na______",
+    "example": "The national government changed the law."
+  },
+  {
+    "id": 321,
+    "answer": "international",
+    "ja_prompt": "国際的な",
+    "pos": "adjective",
+    "aliases": [
+      "global"
+    ],
+    "hint": "in___________",
+    "example": "International exchange helps students understand other cultures."
+  },
+  {
+    "id": 322,
+    "answer": "public",
+    "ja_prompt": "公共の・公の",
+    "pos": "adjective",
+    "aliases": [
+      "open"
+    ],
+    "hint": "pu____",
+    "example": "Public transportation is useful in large cities."
+  },
+  {
+    "id": 323,
+    "answer": "private",
+    "ja_prompt": "私的な・民間の",
+    "pos": "adjective",
+    "aliases": [
+      "personal"
+    ],
+    "hint": "pr_____",
+    "example": "Private schools often have different programs."
+  },
+  {
+    "id": 324,
+    "answer": "social",
+    "ja_prompt": "社会の・社交的な",
+    "pos": "adjective",
+    "aliases": [
+      "societal"
+    ],
+    "hint": "so____",
+    "example": "Social problems are often complex."
+  },
+  {
+    "id": 325,
+    "answer": "economic",
+    "ja_prompt": "経済の",
+    "pos": "adjective",
+    "aliases": [
+      "financial"
+    ],
+    "hint": "ec______",
+    "example": "The country faces economic difficulties."
+  },
+  {
+    "id": 326,
+    "answer": "environmental",
+    "ja_prompt": "環境の",
+    "pos": "adjective",
+    "aliases": [
+      "ecological"
+    ],
+    "hint": "en___________",
+    "example": "Environmental problems require international cooperation."
+  },
+  {
+    "id": 327,
+    "answer": "natural",
+    "ja_prompt": "自然の・当然の",
+    "pos": "adjective",
+    "aliases": [
+      "normal"
+    ],
+    "hint": "na_____",
+    "example": "Natural resources should be used carefully."
+  },
+  {
+    "id": 328,
+    "answer": "artificial",
+    "ja_prompt": "人工の",
+    "pos": "adjective",
+    "aliases": [
+      "man-made"
+    ],
+    "hint": "ar________",
+    "example": "Artificial light can affect sleep."
+  },
+  {
+    "id": 329,
+    "answer": "physical",
+    "ja_prompt": "身体の・物理的な",
+    "pos": "adjective",
+    "aliases": [
+      "bodily"
+    ],
+    "hint": "ph______",
+    "example": "Physical exercise is good for mental health."
+  },
+  {
+    "id": 330,
+    "answer": "mental",
+    "ja_prompt": "精神の・心の",
+    "pos": "adjective",
+    "aliases": [
+      "psychological"
+    ],
+    "hint": "me____",
+    "example": "Mental health is as important as physical health."
+  },
+  {
+    "id": 331,
+    "answer": "medical",
+    "ja_prompt": "医療の・医学の",
+    "pos": "adjective",
+    "aliases": [
+      "clinical"
+    ],
+    "hint": "me_____",
+    "example": "Medical technology is developing rapidly."
+  },
+  {
+    "id": 332,
+    "answer": "educational",
+    "ja_prompt": "教育の・教育的な",
+    "pos": "adjective",
+    "aliases": [
+      "academic"
+    ],
+    "hint": "ed_________",
+    "example": "Educational opportunities should be equal."
+  },
+  {
+    "id": 333,
+    "answer": "academic",
+    "ja_prompt": "学問の・大学の",
+    "pos": "adjective",
+    "aliases": [
+      "scholarly"
+    ],
+    "hint": "ac______",
+    "example": "Academic writing requires clear logic."
+  },
+  {
+    "id": 334,
+    "answer": "creative",
+    "ja_prompt": "創造的な",
+    "pos": "adjective",
+    "aliases": [
+      "imaginative"
+    ],
+    "hint": "cr______",
+    "example": "Creative thinking is useful in many fields."
+  },
+  {
+    "id": 335,
+    "answer": "practical",
+    "ja_prompt": "実用的な・実際的な",
+    "pos": "adjective",
+    "aliases": [
+      "useful"
+    ],
+    "hint": "pr_______",
+    "example": "The book gives practical advice."
+  },
+  {
+    "id": 336,
+    "answer": "effective",
+    "ja_prompt": "効果的な",
+    "pos": "adjective",
+    "aliases": [
+      "efficient",
+      "successful"
+    ],
+    "hint": "ef_______",
+    "example": "This is an effective way to remember words."
+  },
+  {
+    "id": 337,
+    "answer": "efficient",
+    "ja_prompt": "効率的な",
+    "pos": "adjective",
+    "aliases": [
+      "effective"
+    ],
+    "hint": "ef_______",
+    "example": "Trains are an efficient means of transportation."
+  },
+  {
+    "id": 338,
+    "answer": "successful",
+    "ja_prompt": "成功した",
+    "pos": "adjective",
+    "aliases": [
+      "effective"
+    ],
+    "hint": "su________",
+    "example": "The event was successful because many people joined."
+  },
+  {
+    "id": 339,
+    "answer": "responsible",
+    "ja_prompt": "責任がある・信頼できる",
+    "pos": "adjective",
+    "aliases": [
+      "accountable"
+    ],
+    "hint": "re_________",
+    "example": "Students should be responsible for their own learning."
+  },
+  {
+    "id": 340,
+    "answer": "independent",
+    "ja_prompt": "独立した・自立した",
+    "pos": "adjective",
+    "aliases": [
+      "autonomous"
+    ],
+    "hint": "in_________",
+    "example": "Students become more independent at university."
+  },
+  {
+    "id": 341,
+    "answer": "dependent",
+    "ja_prompt": "依存している",
+    "pos": "adjective",
+    "aliases": [
+      "reliant"
+    ],
+    "hint": "de_______",
+    "example": "Young children are dependent on adults."
+  },
+  {
+    "id": 342,
+    "answer": "equal",
+    "ja_prompt": "等しい・平等な",
+    "pos": "adjective",
+    "aliases": [
+      "same",
+      "fair"
+    ],
+    "hint": "eq___",
+    "example": "Everyone should have equal access to education."
+  },
+  {
+    "id": 343,
+    "answer": "fair",
+    "ja_prompt": "公平な・適正な",
+    "pos": "adjective",
+    "aliases": [
+      "just",
+      "equal"
+    ],
+    "hint": "fa__",
+    "example": "A fair society protects weak people."
+  },
+  {
+    "id": 344,
+    "answer": "accurate",
+    "ja_prompt": "正確な",
+    "pos": "adjective",
+    "aliases": [
+      "exact",
+      "correct"
+    ],
+    "hint": "ac______",
+    "example": "Accurate information is necessary."
+  },
+  {
+    "id": 345,
+    "answer": "exact",
+    "ja_prompt": "正確な・厳密な",
+    "pos": "adjective",
+    "aliases": [
+      "accurate",
+      "precise"
+    ],
+    "hint": "ex___",
+    "example": "We do not know the exact number."
+  },
+  {
+    "id": 346,
+    "answer": "precise",
+    "ja_prompt": "精密な・正確な",
+    "pos": "adjective",
+    "aliases": [
+      "exact",
+      "accurate"
+    ],
+    "hint": "pr_____",
+    "example": "The instructions must be precise."
+  },
+  {
+    "id": 347,
+    "answer": "appropriate",
+    "ja_prompt": "適切な",
+    "pos": "adjective",
+    "aliases": [
+      "suitable",
+      "proper"
+    ],
+    "hint": "ap_________",
+    "example": "Choose the most appropriate word."
+  },
+  {
+    "id": 348,
+    "answer": "suitable",
+    "ja_prompt": "適した・ふさわしい",
+    "pos": "adjective",
+    "aliases": [
+      "appropriate",
+      "proper"
+    ],
+    "hint": "su______",
+    "example": "This book is suitable for high school students."
+  },
+  {
+    "id": 349,
+    "answer": "proper",
+    "ja_prompt": "適切な・正しい",
+    "pos": "adjective",
+    "aliases": [
+      "appropriate"
+    ],
+    "hint": "pr____",
+    "example": "Proper sleep helps students concentrate."
+  },
+  {
+    "id": 350,
+    "answer": "valuable",
+    "ja_prompt": "価値のある",
+    "pos": "adjective",
+    "aliases": [
+      "useful",
+      "precious"
+    ],
+    "hint": "va______",
+    "example": "Experience is valuable for young people."
+  },
+  {
+    "id": 351,
+    "answer": "worthwhile",
+    "ja_prompt": "価値のある・やりがいのある",
+    "pos": "adjective",
+    "aliases": [
+      "valuable"
+    ],
+    "hint": "wo________",
+    "example": "Volunteering is a worthwhile experience."
+  },
+  {
+    "id": 352,
+    "answer": "harmful",
+    "ja_prompt": "有害な",
+    "pos": "adjective",
+    "aliases": [
+      "damaging"
+    ],
+    "hint": "ha_____",
+    "example": "Too much sugar is harmful to health."
+  },
+  {
+    "id": 353,
+    "answer": "beneficial",
+    "ja_prompt": "有益な",
+    "pos": "adjective",
+    "aliases": [
+      "helpful",
+      "useful"
+    ],
+    "hint": "be________",
+    "example": "Reading is beneficial to language learners."
+  },
+  {
+    "id": 354,
+    "answer": "convenient",
+    "ja_prompt": "便利な",
+    "pos": "adjective",
+    "aliases": [
+      "handy",
+      "useful"
+    ],
+    "hint": "co________",
+    "example": "Online shopping is convenient."
+  },
+  {
+    "id": 355,
+    "answer": "comfortable",
+    "ja_prompt": "快適な",
+    "pos": "adjective",
+    "aliases": [
+      "pleasant"
+    ],
+    "hint": "co_________",
+    "example": "A comfortable classroom helps students learn."
+  },
+  {
+    "id": 356,
+    "answer": "familiar",
+    "ja_prompt": "よく知られた・なじみのある",
+    "pos": "adjective",
+    "aliases": [
+      "known"
+    ],
+    "hint": "fa______",
+    "example": "The topic is familiar to many students."
+  },
+  {
+    "id": 357,
+    "answer": "unfamiliar",
+    "ja_prompt": "なじみのない・見慣れない",
+    "pos": "adjective",
+    "aliases": [
+      "unknown"
+    ],
+    "hint": "un________",
+    "example": "Unfamiliar words can be guessed from context."
+  },
+  {
+    "id": 358,
+    "answer": "aware",
+    "ja_prompt": "気づいている・認識している",
+    "pos": "adjective",
+    "aliases": [
+      "conscious"
+    ],
+    "hint": "aw___",
+    "example": "People are becoming aware of environmental issues."
+  },
+  {
+    "id": 359,
+    "answer": "conscious",
+    "ja_prompt": "意識している・意識的な",
+    "pos": "adjective",
+    "aliases": [
+      "aware"
+    ],
+    "hint": "co_______",
+    "example": "We should be conscious of how we use energy."
+  },
+  {
+    "id": 360,
+    "answer": "serious",
+    "ja_prompt": "深刻な・真剣な",
+    "pos": "adjective",
+    "aliases": [
+      "grave"
+    ],
+    "hint": "se_____",
+    "example": "Food shortage is a serious problem."
+  },
+  {
+    "id": 361,
+    "answer": "potential",
+    "ja_prompt": "潜在的な・可能性のある",
+    "pos": "adjective",
+    "aliases": [
+      "possible"
+    ],
+    "hint": "po_______",
+    "example": "The plan has potential benefits."
+  },
+  {
+    "id": 362,
+    "answer": "actual",
+    "ja_prompt": "実際の",
+    "pos": "adjective",
+    "aliases": [
+      "real"
+    ],
+    "hint": "ac____",
+    "example": "The actual cost was higher than expected."
+  },
+  {
+    "id": 363,
+    "answer": "ideal",
+    "ja_prompt": "理想的な",
+    "pos": "adjective",
+    "aliases": [
+      "perfect"
+    ],
+    "hint": "id___",
+    "example": "The ideal solution is difficult to find."
+  },
+  {
+    "id": 364,
+    "answer": "negative",
+    "ja_prompt": "否定的な・悪い",
+    "pos": "adjective",
+    "aliases": [
+      "bad",
+      "unfavorable"
+    ],
+    "hint": "ne______",
+    "example": "The article describes the negative effects of noise."
+  },
+  {
+    "id": 365,
+    "answer": "positive",
+    "ja_prompt": "肯定的な・良い",
+    "pos": "adjective",
+    "aliases": [
+      "good",
+      "favorable"
+    ],
+    "hint": "po______",
+    "example": "The program had a positive effect on students."
+  },
+  {
+    "id": 366,
+    "answer": "especially",
+    "ja_prompt": "特に",
+    "pos": "adverb",
+    "aliases": [
+      "particularly"
+    ],
+    "hint": "es________",
+    "example": "This is especially true for young children."
+  },
+  {
+    "id": 367,
+    "answer": "particularly",
+    "ja_prompt": "特に・とりわけ",
+    "pos": "adverb",
+    "aliases": [
+      "especially"
+    ],
+    "hint": "pa__________",
+    "example": "The problem is particularly serious in large cities."
+  },
+  {
+    "id": 368,
+    "answer": "probably",
+    "ja_prompt": "おそらく",
+    "pos": "adverb",
+    "aliases": [
+      "likely"
+    ],
+    "hint": "pr______",
+    "example": "The number will probably increase next year."
+  },
+  {
+    "id": 369,
+    "answer": "possibly",
+    "ja_prompt": "ひょっとすると・可能性として",
+    "pos": "adverb",
+    "aliases": [
+      "perhaps",
+      "maybe"
+    ],
+    "hint": "po______",
+    "example": "The plan could possibly reduce waste."
+  },
+  {
+    "id": 370,
+    "answer": "certainly",
+    "ja_prompt": "確かに・間違いなく",
+    "pos": "adverb",
+    "aliases": [
+      "surely"
+    ],
+    "hint": "ce_______",
+    "example": "Technology has certainly changed our lives."
+  },
+  {
+    "id": 371,
+    "answer": "clearly",
+    "ja_prompt": "明らかに・はっきりと",
+    "pos": "adverb",
+    "aliases": [
+      "obviously"
+    ],
+    "hint": "cl_____",
+    "example": "The graph clearly shows the trend."
+  },
+  {
+    "id": 372,
+    "answer": "obviously",
+    "ja_prompt": "明らかに",
+    "pos": "adverb",
+    "aliases": [
+      "clearly"
+    ],
+    "hint": "ob_______",
+    "example": "Obviously, more research is needed."
+  },
+  {
+    "id": 373,
+    "answer": "gradually",
+    "ja_prompt": "徐々に",
+    "pos": "adverb",
+    "aliases": [
+      "slowly"
+    ],
+    "hint": "gr_______",
+    "example": "The city gradually became larger."
+  },
+  {
+    "id": 374,
+    "answer": "rapidly",
+    "ja_prompt": "急速に",
+    "pos": "adverb",
+    "aliases": [
+      "quickly"
+    ],
+    "hint": "ra_____",
+    "example": "Technology is developing rapidly."
+  },
+  {
+    "id": 375,
+    "answer": "suddenly",
+    "ja_prompt": "突然",
+    "pos": "adverb",
+    "aliases": [
+      "abruptly"
+    ],
+    "hint": "su______",
+    "example": "The weather suddenly changed."
+  },
+  {
+    "id": 376,
+    "answer": "immediately",
+    "ja_prompt": "すぐに・直ちに",
+    "pos": "adverb",
+    "aliases": [
+      "at once"
+    ],
+    "hint": "im_________",
+    "example": "The students immediately understood the point."
+  },
+  {
+    "id": 377,
+    "answer": "eventually",
+    "ja_prompt": "最終的に・やがて",
+    "pos": "adverb",
+    "aliases": [
+      "finally"
+    ],
+    "hint": "ev________",
+    "example": "She eventually became a teacher."
+  },
+  {
+    "id": 378,
+    "answer": "finally",
+    "ja_prompt": "ついに・最後に",
+    "pos": "adverb",
+    "aliases": [
+      "eventually"
+    ],
+    "hint": "fi_____",
+    "example": "Finally, the writer gives a solution."
+  },
+  {
+    "id": 379,
+    "answer": "initially",
+    "ja_prompt": "初めは・当初は",
+    "pos": "adverb",
+    "aliases": [
+      "at first"
+    ],
+    "hint": "in_______",
+    "example": "Initially, the plan seemed impossible."
+  },
+  {
+    "id": 380,
+    "answer": "previously",
+    "ja_prompt": "以前は・前に",
+    "pos": "adverb",
+    "aliases": [
+      "before"
+    ],
+    "hint": "pr________",
+    "example": "The city was previously a small village."
+  },
+  {
+    "id": 381,
+    "answer": "recently",
+    "ja_prompt": "最近",
+    "pos": "adverb",
+    "aliases": [
+      "lately"
+    ],
+    "hint": "re______",
+    "example": "Recently, many students use online tools."
+  },
+  {
+    "id": 382,
+    "answer": "currently",
+    "ja_prompt": "現在は",
+    "pos": "adverb",
+    "aliases": [
+      "now"
+    ],
+    "hint": "cu_______",
+    "example": "The museum is currently closed."
+  },
+  {
+    "id": 383,
+    "answer": "frequently",
+    "ja_prompt": "頻繁に",
+    "pos": "adverb",
+    "aliases": [
+      "often"
+    ],
+    "hint": "fr________",
+    "example": "This word is frequently used in academic texts."
+  },
+  {
+    "id": 384,
+    "answer": "rarely",
+    "ja_prompt": "めったに〜ない",
+    "pos": "adverb",
+    "aliases": [
+      "seldom"
+    ],
+    "hint": "ra____",
+    "example": "She rarely misses class."
+  },
+  {
+    "id": 385,
+    "answer": "occasionally",
+    "ja_prompt": "時折・たまに",
+    "pos": "adverb",
+    "aliases": [
+      "sometimes"
+    ],
+    "hint": "oc__________",
+    "example": "The teacher occasionally gives short quizzes."
+  },
+  {
+    "id": 386,
+    "answer": "usually",
+    "ja_prompt": "たいてい・普通は",
+    "pos": "adverb",
+    "aliases": [
+      "normally"
+    ],
+    "hint": "us_____",
+    "example": "Students usually read the passage first."
+  },
+  {
+    "id": 387,
+    "answer": "generally",
+    "ja_prompt": "一般に・概して",
+    "pos": "adverb",
+    "aliases": [
+      "usually"
+    ],
+    "hint": "ge_______",
+    "example": "Generally, practice improves performance."
+  },
+  {
+    "id": 388,
+    "answer": "therefore",
+    "ja_prompt": "それゆえに・したがって",
+    "pos": "adverb",
+    "aliases": [
+      "thus",
+      "consequently"
+    ],
+    "hint": "th_______",
+    "example": "The road was closed; therefore, we took another route."
+  },
+  {
+    "id": 389,
+    "answer": "thus",
+    "ja_prompt": "したがって・このように",
+    "pos": "adverb",
+    "aliases": [
+      "therefore"
+    ],
+    "hint": "th__",
+    "example": "The evidence is weak; thus, the conclusion is uncertain."
+  },
+  {
+    "id": 390,
+    "answer": "consequently",
+    "ja_prompt": "その結果・したがって",
+    "pos": "adverb",
+    "aliases": [
+      "therefore"
+    ],
+    "hint": "co__________",
+    "example": "The price rose; consequently, fewer people bought it."
+  },
+  {
+    "id": 391,
+    "answer": "however",
+    "ja_prompt": "しかしながら",
+    "pos": "adverb",
+    "aliases": [
+      "nevertheless"
+    ],
+    "hint": "ho_____",
+    "example": "The idea is interesting; however, it has some problems."
+  },
+  {
+    "id": 392,
+    "answer": "nevertheless",
+    "ja_prompt": "それにもかかわらず",
+    "pos": "adverb",
+    "aliases": [
+      "however",
+      "nonetheless"
+    ],
+    "hint": "ne__________",
+    "example": "The task was difficult; nevertheless, they completed it."
+  },
+  {
+    "id": 393,
+    "answer": "moreover",
+    "ja_prompt": "さらに・そのうえ",
+    "pos": "adverb",
+    "aliases": [
+      "furthermore"
+    ],
+    "hint": "mo______",
+    "example": "The plan is cheap; moreover, it is easy to carry out."
+  },
+  {
+    "id": 394,
+    "answer": "furthermore",
+    "ja_prompt": "さらに・そのうえ",
+    "pos": "adverb",
+    "aliases": [
+      "moreover"
+    ],
+    "hint": "fu_________",
+    "example": "The book is useful; furthermore, it is easy to read."
+  },
+  {
+    "id": 395,
+    "answer": "besides",
+    "ja_prompt": "そのうえ・さらに",
+    "pos": "adverb",
+    "aliases": [
+      "moreover"
+    ],
+    "hint": "be_____",
+    "example": "Besides, the system saves time."
+  },
+  {
+    "id": 396,
+    "answer": "instead",
+    "ja_prompt": "その代わりに",
+    "pos": "adverb",
+    "aliases": [
+      "rather"
+    ],
+    "hint": "in_____",
+    "example": "He did not take a bus. Instead, he walked."
+  },
+  {
+    "id": 397,
+    "answer": "otherwise",
+    "ja_prompt": "さもなければ・別の方法で",
+    "pos": "adverb",
+    "aliases": [
+      "or else"
+    ],
+    "hint": "ot_______",
+    "example": "Study regularly; otherwise, you will forget many words."
+  },
+  {
+    "id": 398,
+    "answer": "rather",
+    "ja_prompt": "むしろ・かなり",
+    "pos": "adverb",
+    "aliases": [
+      "instead",
+      "fairly"
+    ],
+    "hint": "ra____",
+    "example": "The question is rather difficult."
+  },
+  {
+    "id": 399,
+    "answer": "almost",
+    "ja_prompt": "ほとんど",
+    "pos": "adverb",
+    "aliases": [
+      "nearly"
+    ],
+    "hint": "al____",
+    "example": "Almost all students passed the exam."
+  },
+  {
+    "id": 400,
+    "answer": "nearly",
+    "ja_prompt": "ほとんど・もう少しで",
+    "pos": "adverb",
+    "aliases": [
+      "almost"
+    ],
+    "hint": "ne____",
+    "example": "The project is nearly finished."
+  },
+  {
+    "id": 401,
+    "answer": "approximately",
+    "ja_prompt": "およそ・約",
+    "pos": "adverb",
+    "aliases": [
+      "about",
+      "roughly"
+    ],
+    "hint": "ap___________",
+    "example": "Approximately two hundred students joined the event."
+  },
+  {
+    "id": 402,
+    "answer": "roughly",
+    "ja_prompt": "おおよそ・大まかに",
+    "pos": "adverb",
+    "aliases": [
+      "approximately"
+    ],
+    "hint": "ro_____",
+    "example": "The two groups are roughly the same size."
+  },
+  {
+    "id": 403,
+    "answer": "relatively",
+    "ja_prompt": "比較的",
+    "pos": "adverb",
+    "aliases": [
+      "comparatively"
+    ],
+    "hint": "re________",
+    "example": "The rule is relatively easy to understand."
+  },
+  {
+    "id": 404,
+    "answer": "extremely",
+    "ja_prompt": "極めて・非常に",
+    "pos": "adverb",
+    "aliases": [
+      "very"
+    ],
+    "hint": "ex_______",
+    "example": "The problem is extremely serious."
+  },
+  {
+    "id": 405,
+    "answer": "highly",
+    "ja_prompt": "非常に・高く",
+    "pos": "adverb",
+    "aliases": [
+      "very",
+      "greatly"
+    ],
+    "hint": "hi____",
+    "example": "The movie was highly popular among teenagers."
+  },
+  {
+    "id": 406,
+    "answer": "mainly",
+    "ja_prompt": "主に",
+    "pos": "adverb",
+    "aliases": [
+      "mostly",
+      "primarily"
+    ],
+    "hint": "ma____",
+    "example": "The article mainly discusses education."
+  },
+  {
+    "id": 407,
+    "answer": "primarily",
+    "ja_prompt": "主に・第一に",
+    "pos": "adverb",
+    "aliases": [
+      "mainly"
+    ],
+    "hint": "pr_______",
+    "example": "The course is primarily for beginners."
+  },
+  {
+    "id": 408,
+    "answer": "largely",
+    "ja_prompt": "大部分は・主に",
+    "pos": "adverb",
+    "aliases": [
+      "mostly"
+    ],
+    "hint": "la_____",
+    "example": "The success was largely due to teamwork."
+  },
+  {
+    "id": 409,
+    "answer": "mostly",
+    "ja_prompt": "大部分は・たいてい",
+    "pos": "adverb",
+    "aliases": [
+      "largely"
+    ],
+    "hint": "mo____",
+    "example": "The class is mostly made up of first-year students."
+  },
+  {
+    "id": 410,
+    "answer": "exactly",
+    "ja_prompt": "正確に・まさに",
+    "pos": "adverb",
+    "aliases": [
+      "precisely"
+    ],
+    "hint": "ex_____",
+    "example": "I do not know exactly what happened."
+  },
+  {
+    "id": 411,
+    "answer": "precisely",
+    "ja_prompt": "正確に・まさに",
+    "pos": "adverb",
+    "aliases": [
+      "exactly"
+    ],
+    "hint": "pr_______",
+    "example": "The word must be used precisely."
+  },
+  {
+    "id": 412,
+    "answer": "similarly",
+    "ja_prompt": "同様に",
+    "pos": "adverb",
+    "aliases": [
+      "likewise"
+    ],
+    "hint": "si_______",
+    "example": "Similarly, other countries face the same problem."
+  },
+  {
+    "id": 413,
+    "answer": "likewise",
+    "ja_prompt": "同様に",
+    "pos": "adverb",
+    "aliases": [
+      "similarly"
+    ],
+    "hint": "li______",
+    "example": "The first method is useful. Likewise, the second is effective."
+  }
+]

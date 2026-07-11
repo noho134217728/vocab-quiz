@@ -1,0 +1,414 @@
+answer,ja_prompt,pos,aliases,hint,example
+analyze,〜を分析する,verb,examine;study,an_____,Students analyze the passage before choosing the best answer.
+compare,〜を比較する,verb,contrast,co_____,We compare two opinions in the essay.
+contrast,〜を対比する,verb,compare,co______,The author contrasts city life with country life.
+describe,〜を描写する・説明する,verb,explain,de______,The graph describes a change in population.
+explain,〜を説明する,verb,describe;clarify,ex_____,The teacher explained the rule with a simple example.
+define,〜を定義する,verb,explain,de____,The word is defined at the beginning of the article.
+identify,〜を特定する・見分ける,verb,recognize,id______,Students must identify the main idea of the paragraph.
+recognize,〜を認識する・気づく,verb,identify;notice,re_______,Many people recognize the need for clean energy.
+indicate,〜を示す・指し示す,verb,show;suggest,in______,The data indicate that sleep affects memory.
+suggest,〜を示唆する・提案する,verb,indicate;propose,su_____,The result suggests a strong connection between diet and health.
+imply,〜を暗に意味する,verb,suggest,im___,His words imply that he disagrees with the plan.
+infer,〜を推測する・推論する,verb,deduce,in___,We can infer her feelings from her expression.
+conclude,〜と結論づける,verb,decide;infer,co______,The writer concludes that education should be free.
+argue,〜と主張する・議論する,verb,claim;debate,ar___,The author argues that technology changes society.
+claim,〜と主張する,verb,argue;state,cl___,Some researchers claim that exercise improves concentration.
+state,〜を述べる,verb,say;mention,st___,The article states that water is becoming scarce.
+mention,〜に言及する,verb,refer,me_____,The speaker mentioned several problems in the city.
+refer,言及する・参照する,verb,mention,re___,Please refer to the chart on the next page.
+emphasize,〜を強調する,verb,stress,em_______,The teacher emphasized the importance of review.
+stress,〜を強調する,verb,emphasize,st____,The passage stresses the value of cooperation.
+focus,焦点を合わせる・集中する,verb,concentrate,fo___,The lesson focuses on reading skills.
+concentrate,集中する,verb,focus,co_________,It is difficult to concentrate in a noisy room.
+observe,〜を観察する・気づく,verb,notice;watch,ob_____,Scientists observe changes in the environment.
+notice,〜に気づく,verb,observe;realize,no____,I noticed a small mistake in the sentence.
+realize,〜に気づく・実現する,verb,understand;notice,re_____,She realized that the answer was wrong.
+understand,〜を理解する,verb,comprehend,un________,Students should understand the writer's purpose.
+comprehend,〜を理解する,verb,understand,co________,It takes time to comprehend a difficult text.
+interpret,〜を解釈する,verb,understand;explain,in_______,Readers may interpret the poem in different ways.
+translate,〜を翻訳する,verb,render,tr_______,He translated the sentence into Japanese.
+summarize,〜を要約する,verb,sum,su_______,Students summarize each paragraph in one sentence.
+evaluate,〜を評価する,verb,assess;judge,ev______,We need to evaluate the advantages of the plan.
+assess,〜を評価する・査定する,verb,evaluate,as____,The test assesses reading and listening skills.
+estimate,〜を見積もる・推定する,verb,guess;calculate,es______,Experts estimate that the population will grow.
+predict,〜を予測する,verb,forecast,pr_____,It is hard to predict the future of the economy.
+forecast,〜を予測する,verb,predict,fo______,The report forecasts heavy rain tomorrow.
+measure,〜を測定する,verb,gauge,me_____,Scientists measure the temperature of the water.
+calculate,〜を計算する,verb,compute,ca_______,Students calculate the average score.
+determine,〜を決定する・明らかにする,verb,decide;establish,de_______,Several factors determine a student's success.
+establish,〜を確立する・設立する,verb,found;prove,es_______,The school established a new scholarship program.
+prove,〜を証明する,verb,demonstrate;show,pr___,The experiment proved that the idea was correct.
+demonstrate,〜を実証する・示す,verb,show;prove,de_________,The graph demonstrates a clear trend.
+confirm,〜を確認する・裏づける,verb,verify,co_____,The results confirmed our first impression.
+verify,〜を検証する・確認する,verb,confirm,ve____,The information must be verified before publication.
+support,〜を支える・支持する,verb,back;help,su_____,Many facts support the author's argument.
+oppose,〜に反対する,verb,resist,op____,Some residents opposed the construction plan.
+reject,〜を拒否する・退ける,verb,refuse,re____,The committee rejected the proposal.
+accept,〜を受け入れる,verb,admit,ac____,People may accept new ideas slowly.
+admit,〜を認める・入ることを許す,verb,acknowledge,ad___,He admitted that he had made a mistake.
+acknowledge,〜を認める・謝意を示す,verb,admit;recognize,ac_________,The writer acknowledges the limits of the study.
+deny,〜を否定する,verb,reject,de__,The company denied responsibility for the accident.
+permit,〜を許可する,verb,allow,pe____,The rule permits students to use dictionaries.
+allow,〜を許す・可能にする,verb,permit;enable,al___,This system allows users to learn at home.
+enable,〜を可能にする,verb,allow,en____,Online tools enable students to study anywhere.
+encourage,〜を励ます・促す,verb,promote,en_______,Teachers encourage students to ask questions.
+discourage,〜を思いとどまらせる,verb,deter,di________,High costs discourage people from buying electric cars.
+promote,〜を促進する・宣伝する,verb,encourage;advance,pr_____,The campaign promotes healthy eating habits.
+prevent,〜を防ぐ,verb,stop,pr_____,Regular exercise helps prevent disease.
+avoid,〜を避ける,verb,escape,av___,Students should avoid careless mistakes.
+reduce,〜を減らす,verb,decrease;lower,re____,Recycling can reduce waste.
+decrease,減少する・〜を減らす,verb,reduce;decline,de______,The number of visitors decreased last year.
+increase,増加する・〜を増やす,verb,grow;raise,in______,Reading books can increase vocabulary.
+raise,〜を上げる・育てる・提起する,verb,increase;bring up,ra___,The article raises an important question.
+improve,〜を改善する・向上する,verb,enhance,im_____,Practice improves speaking ability.
+enhance,〜を高める・向上させる,verb,improve,en_____,Music can enhance the effect of a movie.
+develop,発達する・〜を開発する,verb,grow;create,de_____,Children develop language skills through conversation.
+maintain,〜を維持する・主張する,verb,keep;preserve,ma______,It is important to maintain a healthy lifestyle.
+preserve,〜を保存する・保護する,verb,protect;maintain,pr______,We must preserve old buildings for future generations.
+protect,〜を守る・保護する,verb,defend;preserve,pr_____,Laws protect workers from unfair treatment.
+save,〜を救う・節約する・保存する,verb,rescue;preserve,sa__,Using less water can save energy.
+waste,〜を浪費する,verb,squander,wa___,We should not waste food or time.
+consume,〜を消費する,verb,use,co_____,Modern society consumes a large amount of energy.
+produce,〜を生産する・生み出す,verb,create;generate,pr_____,The factory produces parts for cars.
+generate,〜を生み出す・発生させる,verb,produce;create,ge______,Wind power generates electricity.
+create,〜を創造する・作る,verb,produce;make,cr____,Artists create new ways of seeing the world.
+invent,〜を発明する,verb,create,in____,The telephone was invented in the nineteenth century.
+discover,〜を発見する,verb,find,di______,Researchers discovered a new species of fish.
+explore,〜を探究する・探索する,verb,investigate,ex_____,The book explores the history of language.
+investigate,〜を調査する,verb,examine;explore,in_________,The police investigated the cause of the fire.
+examine,〜を調べる・診察する,verb,inspect;analyze,ex_____,The doctor examined the patient's eyes.
+inspect,〜を検査する,verb,examine;check,in_____,Workers inspect the machines every morning.
+select,〜を選ぶ,verb,choose,se____,Please select the best answer from the choices.
+choose,〜を選ぶ,verb,select;pick,ch____,Students choose courses according to their interests.
+prefer,〜を好む,verb,like better,pr____,Many people prefer trains to buses.
+decide,決める・判断する,verb,determine,de____,We decided to join the volunteer program.
+attempt,〜を試みる,verb,try,at_____,The student attempted to solve the difficult problem.
+try,〜を試す・試みる,verb,attempt,tr_,Try to read the whole passage first.
+achieve,〜を達成する,verb,accomplish;attain,ac_____,She achieved her goal through hard work.
+accomplish,〜を成し遂げる,verb,achieve,ac________,The team accomplished the task in one week.
+attain,〜を達成する・到達する,verb,achieve;reach,at____,It takes effort to attain a high level of skill.
+obtain,〜を得る・入手する,verb,get;acquire,ob____,Students can obtain information from the Internet.
+acquire,〜を習得する・獲得する,verb,obtain;gain,ac_____,Children acquire language by listening to adults.
+gain,〜を得る・増す,verb,obtain;acquire,ga__,Students gain confidence through practice.
+provide,〜を提供する,verb,supply;offer,pr_____,The program provides free meals for children.
+supply,〜を供給する,verb,provide,su____,The river supplies water to the town.
+offer,〜を提供する・申し出る,verb,provide;give,of___,The company offers many chances to learn.
+require,〜を必要とする・要求する,verb,need;demand,re_____,This job requires good communication skills.
+demand,〜を要求する・需要がある,verb,require,de____,Customers demand better service.
+depend,頼る・依存する,verb,rely,de____,Success depends on effort and preparation.
+rely,頼る・依存する,verb,depend,re__,Many students rely on online dictionaries.
+involve,〜を含む・伴う,verb,include;entail,in_____,The project involves students from several schools.
+include,〜を含む,verb,contain;involve,in_____,The price includes breakfast.
+contain,〜を含む・収容する,verb,include,co_____,This food contains too much sugar.
+consist,成り立つ・構成される,verb,be composed,co_____,The course consists of ten lessons.
+represent,〜を表す・代表する,verb,stand for,re_______,The dove represents peace.
+replace,〜に取って代わる,verb,substitute,re_____,Robots may replace some simple jobs.
+occur,起こる・発生する,verb,happen,oc___,Natural disasters can occur without warning.
+happen,起こる,verb,occur,ha____,Accidents happen when people are careless.
+emerge,現れる・明らかになる,verb,appear,em____,A new problem emerged after the meeting.
+appear,現れる・〜のように見える,verb,seem;emerge,ap____,The answer appears simple at first.
+disappear,消える,verb,vanish,di_______,Many traditional customs have disappeared.
+remain,残る・〜のままである,verb,stay,re____,The reason remains unclear.
+survive,生き残る・存続する,verb,live,su_____,Some small shops survive by serving local people.
+suffer,苦しむ・被害を受ける,verb,experience pain,su____,Many children suffer from a lack of food.
+affect,〜に影響を与える,verb,influence,af____,Weather affects people's moods.
+adapt,適応する・〜を適合させる,verb,adjust,ad___,Animals adapt to changes in their environment.
+adjust,調整する・適応する,verb,adapt,ad____,Students must adjust to a new school life.
+participate,参加する,verb,join,pa_________,Many students participate in club activities.
+contribute,貢献する・寄与する,verb,help;donate,co________,Volunteers contribute to the local community.
+cooperate,協力する,verb,collaborate,co_______,Students cooperate to finish the project.
+compete,競争する,verb,contend,co_____,Companies compete to sell better products.
+communicate,伝える・意思疎通する,verb,convey,co_________,People communicate through language and gestures.
+convey,〜を伝える,verb,communicate;express,co____,A good picture can convey a strong message.
+express,〜を表現する,verb,convey;show,ex_____,Students should express their opinions clearly.
+respond,反応する・返答する,verb,reply;react,re_____,The audience responded with loud applause.
+react,反応する,verb,respond,re___,People react differently to stress.
+solve,〜を解決する,verb,resolve,so___,Education can help solve social problems.
+resolve,〜を解決する・決意する,verb,solve;settle,re_____,The two countries tried to resolve the conflict.
+manage,なんとか〜する・管理する,verb,handle;control,ma____,She managed to finish the report on time.
+handle,〜を扱う・処理する,verb,manage;deal with,ha____,Teachers must handle many different situations.
+control,〜を制御する・管理する,verb,manage,co_____,It is difficult to control information on the Internet.
+spread,広がる・〜を広める,verb,diffuse,sp____,False information can spread quickly online.
+vary,さまざまである・変化する,verb,differ;change,va__,Customs vary from country to country.
+differ,異なる,verb,vary,di____,Opinions differ among students.
+exist,存在する,verb,be,ex___,Many different cultures exist in the world.
+lead,導く・つながる,verb,cause;guide,le__,Too much stress can lead to health problems.
+cause,〜を引き起こす,verb,bring about;lead to,ca___,Smoking can cause serious illness.
+reflect,〜を反映する・熟考する,verb,mirror;think,re_____,Language reflects culture.
+reveal,〜を明らかにする,verb,show;disclose,re____,The survey revealed a serious problem.
+access,〜にアクセスする・利用する,verb,reach;use,ac____,Students can access many articles online.
+influence,影響・影響力,noun,effect;impact,in_______,Parents have a strong influence on children.
+effect,効果・影響,noun,impact;result,ef____,The effect of the medicine was clear.
+impact,強い影響・衝撃,noun,effect;influence,im____,The Internet has had a great impact on education.
+factor,要因・要素,noun,element;cause,fa____,Cost is an important factor in choosing a school.
+reason,理由・理性,noun,cause;logic,re____,There are several reasons for this change.
+result,結果,noun,outcome;consequence,re____,The result of the survey was surprising.
+consequence,結果・帰結,noun,result;outcome,co_________,Pollution is a serious consequence of rapid growth.
+outcome,結果・成果,noun,result;consequence,ou_____,The outcome of the experiment was unexpected.
+advantage,利点・有利な点,noun,benefit;merit,ad_______,Studying abroad has many advantages.
+disadvantage,欠点・不利な点,noun,drawback,di__________,One disadvantage of online classes is isolation.
+benefit,利益・恩恵,noun,advantage,be_____,Regular exercise has many health benefits.
+drawback,欠点・短所,noun,disadvantage,dr______,The main drawback is the high cost.
+feature,特徴・機能,noun,characteristic;aspect,fe_____,This app has several useful features.
+characteristic,特徴・特性,noun,feature;trait,ch____________,Patience is an important characteristic of a good teacher.
+aspect,側面・観点,noun,side;feature,as____,The article discusses several aspects of education.
+detail,詳細・細部,noun,particular,de____,Please read the details carefully.
+evidence,証拠・根拠,noun,proof,ev______,There is little evidence to support the idea.
+proof,証明・証拠,noun,evidence,pr___,The photo is proof that he was there.
+source,情報源・源,noun,origin,so____,Books are still an important source of knowledge.
+origin,起源・由来,noun,source,or____,The origin of the custom is not clear.
+resource,資源・資料,noun,asset,re______,Water is a valuable resource.
+environment,環境,noun,surroundings,en_________,We must protect the natural environment.
+society,社会,noun,community,so_____,Technology changes the structure of society.
+community,地域社会・共同体,noun,society,co_______,The festival brings the community together.
+culture,文化,noun,civilization,cu_____,Language is closely related to culture.
+tradition,伝統,noun,custom,tr_______,Many traditions are passed down through families.
+custom,慣習・習慣,noun,tradition;practice,cu____,It is a custom to bow in Japan.
+generation,世代,noun,age group,ge________,Each generation has different values.
+population,人口・集団,noun,people,po________,The population of the city is increasing.
+individual,個人,noun,person,in________,Education should respect each individual.
+neighbor,隣人・近所の人,noun,resident,ne______,She helped her elderly neighbor.
+resident,居住者・住民,noun,inhabitant,re______,Many residents opposed the new road.
+citizen,市民・国民,noun,resident;national,ci_____,Citizens have both rights and responsibilities.
+government,政府,noun,administration,go________,The government introduced a new policy.
+policy,政策・方針,noun,plan,po____,The policy aims to reduce waste.
+system,制度・体系・仕組み,noun,structure,sy____,The education system differs from country to country.
+structure,構造・仕組み,noun,system,st_______,The structure of the essay is clear.
+method,方法,noun,way;approach,me____,This method is useful for learning vocabulary.
+approach,取り組み方・接近,noun,method;way,ap______,A new approach is needed to solve the problem.
+process,過程・プロセス,noun,procedure,pr_____,Learning a language is a long process.
+procedure,手順・手続き,noun,process,pr_______,Follow the procedure carefully.
+purpose,目的,noun,aim;goal,pu_____,The purpose of the study is to compare two methods.
+aim,目的・狙い,noun,goal;purpose,ai_,The aim of the program is to help children.
+goal,目標,noun,aim;objective,go__,Her goal is to become a doctor.
+objective,目的・目標,noun,goal;aim,ob_______,The main objective is to improve reading skills.
+issue,問題・論点,noun,problem;topic,is___,Climate change is a global issue.
+problem,問題,noun,issue;difficulty,pr_____,The problem is more serious than it seems.
+difficulty,困難・難しさ,noun,problem;hardship,di________,Many students have difficulty understanding the passage.
+challenge,課題・難題,noun,difficulty,ch_______,Aging society is a major challenge for Japan.
+solution,解決策,noun,answer;resolution,so______,Education may be part of the solution.
+conflict,対立・紛争,noun,dispute,co______,The story describes a conflict between two families.
+relationship,関係,noun,connection,re__________,The relationship between diet and health is important.
+connection,つながり・関係,noun,relationship;link,co________,There is a clear connection between sleep and memory.
+link,関連・つながり,noun,connection,li__,The study shows a link between exercise and happiness.
+role,役割,noun,part;function,ro__,Schools play an important role in society.
+function,機能・役割,noun,role,fu______,The main function of language is communication.
+ability,能力,noun,skill;capacity,ab_____,Reading ability improves with practice.
+skill,技能・技術,noun,ability,sk___,Communication skills are important in many jobs.
+knowledge,知識,noun,information,kn_______,Knowledge alone is not enough.
+information,情報,noun,data,in_________,The Internet provides a lot of information.
+data,データ・資料,noun,information,da__,The data show a clear increase.
+research,研究・調査,noun,study,re______,Recent research shows the importance of sleep.
+survey,調査,noun,poll,su____,The survey asked students about their study habits.
+experiment,実験,noun,test,ex________,The experiment was simple but effective.
+experience,経験,noun,practice,ex________,Travel gives people valuable experience.
+opportunity,機会,noun,chance,op_________,Students should have the opportunity to study abroad.
+chance,機会・可能性,noun,opportunity,ch____,Everyone deserves a chance to learn.
+choice,選択・選択肢,noun,option;selection,ch____,Students have many choices after graduation.
+option,選択肢,noun,choice,op____,Online classes are another option.
+decision,決定・判断,noun,choice,de______,Making a decision is sometimes difficult.
+responsibility,責任,noun,duty,re____________,Citizens have a responsibility to follow rules.
+duty,義務・職務,noun,responsibility,du__,It is our duty to protect the environment.
+right,権利・正しいこと,noun,entitlement,ri___,People have the right to express opinions.
+freedom,自由,noun,liberty,fr_____,Freedom of speech is important in a democracy.
+value,価値・価値観,noun,worth,va___,Different cultures have different values.
+cost,費用・代償,noun,expense;price,co__,The cost of living is rising.
+expense,費用・出費,noun,cost,ex_____,Education is a major expense for many families.
+income,収入,noun,earnings,in____,A stable income is important for family life.
+economy,経済,noun,market,ec_____,Tourism is important to the local economy.
+industry,産業・工業,noun,business,in______,The automobile industry employs many people.
+company,会社,noun,firm,co_____,The company sells products around the world.
+employee,従業員,noun,worker,em______,Employees need safe working conditions.
+employer,雇用主,noun,boss,em______,Employers should provide fair wages.
+customer,顧客・客,noun,client,cu______,Customers expect quick service.
+consumer,消費者,noun,buyer,co______,Consumers are becoming more careful about food safety.
+product,製品・産物,noun,goods,pr_____,This product is popular among young people.
+market,市場,noun,trade area,ma____,The market for electric cars is growing.
+technology,科学技術・技術,noun,technique,te________,Technology has changed the way we communicate.
+device,装置・機器,noun,tool;machine,de____,A smartphone is a useful device.
+machine,機械,noun,device,ma_____,The machine can translate simple sentences.
+tool,道具・手段,noun,instrument,to__,A dictionary is a useful tool for learners.
+media,メディア・媒体,noun,press,me___,Social media influence young people's opinions.
+advertisement,広告,noun,ad,ad___________,Advertisements often use famous people.
+transportation,交通・輸送,noun,transport,tr____________,Public transportation is convenient in large cities.
+vehicle,乗り物・車両,noun,car,ve_____,Electric vehicles are becoming more common.
+pollution,汚染,noun,contamination,po_______,Air pollution is a serious problem in many cities.
+climate,気候,noun,weather pattern,cl_____,The climate is changing around the world.
+temperature,温度・気温,noun,heat level,te_________,The temperature rose quickly in the afternoon.
+species,種・生物種,noun,kind,sp_____,Many species are in danger of extinction.
+habitat,生息地,noun,environment,ha_____,Forests are the habitat of many animals.
+energy,エネルギー,noun,power,en____,Renewable energy is important for the future.
+fuel,燃料,noun,energy source,fu__,Cars need fuel to run.
+material,材料・物質,noun,substance,ma______,Plastic is a common material in daily life.
+substance,物質,noun,material,su_______,Water is a simple but important substance.
+article,記事・論説,noun,essay;text,ar_____,The article discusses the problem of waste.
+passage,一節・文章,noun,text,pa_____,Read the passage and answer the questions.
+paragraph,段落,noun,section,pa_______,The first paragraph introduces the topic.
+sentence,文,noun,statement,se______,The sentence has two possible meanings.
+context,文脈・状況,noun,background,co_____,The meaning depends on the context.
+topic,話題・主題,noun,subject;theme,to___,The topic of the essay is education.
+theme,主題・テーマ,noun,topic,th___,The main theme of the story is friendship.
+author,著者・作者,noun,writer,au____,The author gives several examples.
+reader,読者,noun,audience,re____,The writer wants readers to think about equality.
+audience,聴衆・観客・読者,noun,listeners;viewers,au______,The speech impressed the audience.
+attitude,態度・考え方,noun,view;stance,at______,His attitude toward study changed after the trip.
+opinion,意見,noun,view,op_____,Students should express their opinions clearly.
+view,見解・眺め,noun,opinion;perspective,vi__,The passage presents a different view of success.
+perspective,観点・見方,noun,viewpoint,pe_________,Travel gives people a new perspective.
+concept,概念・考え,noun,idea,co_____,The concept of freedom differs among cultures.
+idea,考え・発想,noun,concept,id__,The idea sounds simple but is hard to practice.
+principle,原則・主義,noun,rule,pr_______,The principle of fairness is important.
+theory,理論・学説,noun,hypothesis,th____,The theory explains the behavior of animals.
+hypothesis,仮説,noun,theory,hy________,The scientist tested a new hypothesis.
+trend,傾向・流行,noun,tendency,tr___,The graph shows a recent trend.
+tendency,傾向,noun,trend;inclination,te______,People have a tendency to avoid difficult tasks.
+rate,割合・速度・料金,noun,ratio,ra__,The birth rate is decreasing.
+amount,量・金額,noun,quantity,am____,The amount of plastic waste is increasing.
+quantity,量,noun,amount,qu______,Quality is more important than quantity.
+quality,質・品質,noun,standard,qu_____,The quality of education matters.
+standard,基準・標準,noun,level;criterion,st______,Schools should maintain high standards.
+level,水準・段階,noun,degree;stage,le___,The level of air pollution is high.
+degree,程度・度合い・学位,noun,level;extent,de____,The degree of damage was serious.
+extent,程度・範囲,noun,degree;range,ex____,We do not know the full extent of the problem.
+range,範囲・幅,noun,extent,ra___,The book covers a wide range of topics.
+variety,多様性・種類,noun,diversity;kind,va_____,The library has a variety of books.
+diversity,多様性,noun,variety,di_______,Cultural diversity makes society richer.
+similarity,類似点,noun,resemblance,si________,There are many similarities between the two languages.
+difference,違い・差,noun,distinction,di________,The difference between the two words is small.
+important,重要な,adjective,significant;crucial,im_______,Education is important for the future.
+significant,重要な・かなりの,adjective,important;meaningful,si_________,There was a significant increase in visitors.
+crucial,極めて重要な,adjective,essential;vital,cr_____,Sleep is crucial for memory.
+essential,不可欠な・本質的な,adjective,necessary;crucial,es_______,Water is essential for life.
+necessary,必要な,adjective,essential;required,ne_______,Careful reading is necessary for this test.
+available,利用可能な・手に入る,adjective,accessible,av_______,Free Wi-Fi is available in the library.
+accessible,利用しやすい・近づきやすい,adjective,available;reachable,ac________,Online lessons make education more accessible.
+possible,可能な,adjective,feasible,po______,It is possible to learn vocabulary little by little.
+impossible,不可能な,adjective,unfeasible,im________,It is impossible to finish without practice.
+likely,起こりそうな・ありそうな,adjective,probable,li____,It is likely that the price will rise.
+unlikely,起こりそうにない,adjective,improbable,un______,It is unlikely that everyone will agree.
+certain,確かな・ある特定の,adjective,sure;specific,ce_____,The cause of the problem is not certain.
+uncertain,不確かな,adjective,unsure,un_______,The future of the town remains uncertain.
+clear,明確な・澄んだ,adjective,obvious,cl___,The writer gives a clear explanation.
+obvious,明らかな,adjective,clear;evident,ob_____,It is obvious that the plan has problems.
+complex,複雑な,adjective,complicated,co_____,Human behavior is complex.
+simple,単純な・簡単な,adjective,easy;plain,si____,The answer is not as simple as it looks.
+similar,似ている,adjective,alike,si_____,The two words have similar meanings.
+different,異なる,adjective,various;distinct,di_______,Different cultures have different customs.
+various,さまざまな,adjective,different;diverse,va_____,Students read various kinds of texts.
+diverse,多様な,adjective,various,di_____,A diverse society has many kinds of people.
+common,共通の・よくある,adjective,ordinary;usual,co____,This is a common mistake among learners.
+ordinary,普通の・通常の,adjective,common;usual,or______,The story is about ordinary people.
+rare,まれな・希少な,adjective,uncommon,ra__,It is rare to see snow in this area.
+unique,独特の・唯一の,adjective,distinctive,un____,Each language has unique features.
+general,一般的な・全体的な,adjective,overall,ge_____,The general idea is easy to understand.
+specific,具体的な・特定の,adjective,particular;certain,sp______,The question asks for a specific example.
+particular,特定の・特別な,adjective,specific,pa________,This word has a particular meaning in science.
+major,主要な・大きな,adjective,main;important,ma___,Air pollution is a major issue.
+minor,小さな・重要でない,adjective,small;less important,mi___,The essay has a few minor errors.
+main,主な,adjective,major;primary,ma__,The main purpose of the article is to persuade readers.
+primary,主要な・第一の,adjective,main;chief,pr_____,The primary goal is to improve health.
+modern,現代の・近代的な,adjective,contemporary,mo____,Modern technology has changed education.
+traditional,伝統的な,adjective,conventional,tr_________,Traditional festivals are important to local communities.
+ancient,古代の,adjective,old,an_____,Ancient cities often developed near rivers.
+current,現在の・流通している,adjective,present,cu_____,The current situation is difficult.
+recent,最近の,adjective,new;latest,re____,Recent studies show the importance of sleep.
+previous,前の・以前の,adjective,former,pr______,Please review the previous lesson.
+former,前の・元の,adjective,previous,fo____,The former president visited the school.
+future,将来の,adjective,coming,fu____,Future generations will face new challenges.
+local,地元の・地域の,adjective,regional,lo___,Local people supported the festival.
+global,世界的な,adjective,worldwide,gl____,Climate change is a global problem.
+national,国家の・全国的な,adjective,domestic,na______,The national government changed the law.
+international,国際的な,adjective,global,in___________,International exchange helps students understand other cultures.
+public,公共の・公の,adjective,open,pu____,Public transportation is useful in large cities.
+private,私的な・民間の,adjective,personal,pr_____,Private schools often have different programs.
+social,社会の・社交的な,adjective,societal,so____,Social problems are often complex.
+economic,経済の,adjective,financial,ec______,The country faces economic difficulties.
+environmental,環境の,adjective,ecological,en___________,Environmental problems require international cooperation.
+natural,自然の・当然の,adjective,normal,na_____,Natural resources should be used carefully.
+artificial,人工の,adjective,man-made,ar________,Artificial light can affect sleep.
+physical,身体の・物理的な,adjective,bodily,ph______,Physical exercise is good for mental health.
+mental,精神の・心の,adjective,psychological,me____,Mental health is as important as physical health.
+medical,医療の・医学の,adjective,clinical,me_____,Medical technology is developing rapidly.
+educational,教育の・教育的な,adjective,academic,ed_________,Educational opportunities should be equal.
+academic,学問の・大学の,adjective,scholarly,ac______,Academic writing requires clear logic.
+creative,創造的な,adjective,imaginative,cr______,Creative thinking is useful in many fields.
+practical,実用的な・実際的な,adjective,useful,pr_______,The book gives practical advice.
+effective,効果的な,adjective,efficient;successful,ef_______,This is an effective way to remember words.
+efficient,効率的な,adjective,effective,ef_______,Trains are an efficient means of transportation.
+successful,成功した,adjective,effective,su________,The event was successful because many people joined.
+responsible,責任がある・信頼できる,adjective,accountable,re_________,Students should be responsible for their own learning.
+independent,独立した・自立した,adjective,autonomous,in_________,Students become more independent at university.
+dependent,依存している,adjective,reliant,de_______,Young children are dependent on adults.
+equal,等しい・平等な,adjective,same;fair,eq___,Everyone should have equal access to education.
+fair,公平な・適正な,adjective,just;equal,fa__,A fair society protects weak people.
+accurate,正確な,adjective,exact;correct,ac______,Accurate information is necessary.
+exact,正確な・厳密な,adjective,accurate;precise,ex___,We do not know the exact number.
+precise,精密な・正確な,adjective,exact;accurate,pr_____,The instructions must be precise.
+appropriate,適切な,adjective,suitable;proper,ap_________,Choose the most appropriate word.
+suitable,適した・ふさわしい,adjective,appropriate;proper,su______,This book is suitable for high school students.
+proper,適切な・正しい,adjective,appropriate,pr____,Proper sleep helps students concentrate.
+valuable,価値のある,adjective,useful;precious,va______,Experience is valuable for young people.
+worthwhile,価値のある・やりがいのある,adjective,valuable,wo________,Volunteering is a worthwhile experience.
+harmful,有害な,adjective,damaging,ha_____,Too much sugar is harmful to health.
+beneficial,有益な,adjective,helpful;useful,be________,Reading is beneficial to language learners.
+convenient,便利な,adjective,handy;useful,co________,Online shopping is convenient.
+comfortable,快適な,adjective,pleasant,co_________,A comfortable classroom helps students learn.
+familiar,よく知られた・なじみのある,adjective,known,fa______,The topic is familiar to many students.
+unfamiliar,なじみのない・見慣れない,adjective,unknown,un________,Unfamiliar words can be guessed from context.
+aware,気づいている・認識している,adjective,conscious,aw___,People are becoming aware of environmental issues.
+conscious,意識している・意識的な,adjective,aware,co_______,We should be conscious of how we use energy.
+serious,深刻な・真剣な,adjective,grave,se_____,Food shortage is a serious problem.
+potential,潜在的な・可能性のある,adjective,possible,po_______,The plan has potential benefits.
+actual,実際の,adjective,real,ac____,The actual cost was higher than expected.
+ideal,理想的な,adjective,perfect,id___,The ideal solution is difficult to find.
+negative,否定的な・悪い,adjective,bad;unfavorable,ne______,The article describes the negative effects of noise.
+positive,肯定的な・良い,adjective,good;favorable,po______,The program had a positive effect on students.
+especially,特に,adverb,particularly,es________,This is especially true for young children.
+particularly,特に・とりわけ,adverb,especially,pa__________,The problem is particularly serious in large cities.
+probably,おそらく,adverb,likely,pr______,The number will probably increase next year.
+possibly,ひょっとすると・可能性として,adverb,perhaps;maybe,po______,The plan could possibly reduce waste.
+certainly,確かに・間違いなく,adverb,surely,ce_______,Technology has certainly changed our lives.
+clearly,明らかに・はっきりと,adverb,obviously,cl_____,The graph clearly shows the trend.
+obviously,明らかに,adverb,clearly,ob_______,"Obviously, more research is needed."
+gradually,徐々に,adverb,slowly,gr_______,The city gradually became larger.
+rapidly,急速に,adverb,quickly,ra_____,Technology is developing rapidly.
+suddenly,突然,adverb,abruptly,su______,The weather suddenly changed.
+immediately,すぐに・直ちに,adverb,at once,im_________,The students immediately understood the point.
+eventually,最終的に・やがて,adverb,finally,ev________,She eventually became a teacher.
+finally,ついに・最後に,adverb,eventually,fi_____,"Finally, the writer gives a solution."
+initially,初めは・当初は,adverb,at first,in_______,"Initially, the plan seemed impossible."
+previously,以前は・前に,adverb,before,pr________,The city was previously a small village.
+recently,最近,adverb,lately,re______,"Recently, many students use online tools."
+currently,現在は,adverb,now,cu_______,The museum is currently closed.
+frequently,頻繁に,adverb,often,fr________,This word is frequently used in academic texts.
+rarely,めったに〜ない,adverb,seldom,ra____,She rarely misses class.
+occasionally,時折・たまに,adverb,sometimes,oc__________,The teacher occasionally gives short quizzes.
+usually,たいてい・普通は,adverb,normally,us_____,Students usually read the passage first.
+generally,一般に・概して,adverb,usually,ge_______,"Generally, practice improves performance."
+therefore,それゆえに・したがって,adverb,thus;consequently,th_______,"The road was closed; therefore, we took another route."
+thus,したがって・このように,adverb,therefore,th__,"The evidence is weak; thus, the conclusion is uncertain."
+consequently,その結果・したがって,adverb,therefore,co__________,"The price rose; consequently, fewer people bought it."
+however,しかしながら,adverb,nevertheless,ho_____,"The idea is interesting; however, it has some problems."
+nevertheless,それにもかかわらず,adverb,however;nonetheless,ne__________,"The task was difficult; nevertheless, they completed it."
+moreover,さらに・そのうえ,adverb,furthermore,mo______,"The plan is cheap; moreover, it is easy to carry out."
+furthermore,さらに・そのうえ,adverb,moreover,fu_________,"The book is useful; furthermore, it is easy to read."
+besides,そのうえ・さらに,adverb,moreover,be_____,"Besides, the system saves time."
+instead,その代わりに,adverb,rather,in_____,"He did not take a bus. Instead, he walked."
+otherwise,さもなければ・別の方法で,adverb,or else,ot_______,"Study regularly; otherwise, you will forget many words."
+rather,むしろ・かなり,adverb,instead;fairly,ra____,The question is rather difficult.
+almost,ほとんど,adverb,nearly,al____,Almost all students passed the exam.
+nearly,ほとんど・もう少しで,adverb,almost,ne____,The project is nearly finished.
+approximately,およそ・約,adverb,about;roughly,ap___________,Approximately two hundred students joined the event.
+roughly,おおよそ・大まかに,adverb,approximately,ro_____,The two groups are roughly the same size.
+relatively,比較的,adverb,comparatively,re________,The rule is relatively easy to understand.
+extremely,極めて・非常に,adverb,very,ex_______,The problem is extremely serious.
+highly,非常に・高く,adverb,very;greatly,hi____,The movie was highly popular among teenagers.
+mainly,主に,adverb,mostly;primarily,ma____,The article mainly discusses education.
+primarily,主に・第一に,adverb,mainly,pr_______,The course is primarily for beginners.
+largely,大部分は・主に,adverb,mostly,la_____,The success was largely due to teamwork.
+mostly,大部分は・たいてい,adverb,largely,mo____,The class is mostly made up of first-year students.
+exactly,正確に・まさに,adverb,precisely,ex_____,I do not know exactly what happened.
+precisely,正確に・まさに,adverb,exactly,pr_______,The word must be used precisely.
+similarly,同様に,adverb,likewise,si_______,"Similarly, other countries face the same problem."
+likewise,同様に,adverb,similarly,li______,"The first method is useful. Likewise, the second is effective."
